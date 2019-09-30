@@ -175,6 +175,7 @@
             this.userRegisterDeleteButton.TabIndex = 14;
             this.userRegisterDeleteButton.Text = "Delete";
             this.userRegisterDeleteButton.UseVisualStyleBackColor = true;
+            this.userRegisterDeleteButton.Click += new System.EventHandler(this.userRegisterDeleteButton_Click);
             // 
             // userRegisterSaveButton
             // 

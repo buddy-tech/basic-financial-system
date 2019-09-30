@@ -17,9 +17,22 @@ namespace BasicFinancialSystem
             InitializeComponent();
         }
 
+        private void UserRegisterLoad(object sender, EventArgs e)
+        {
+            this.userTableAdapter.Fill(this.Financial.user);
+        }
+
         private void userRegisterPreviousButton_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void userRegisterDeleteButton_Click(object sender, EventArgs e)
+        {
+            if(UserBindingSource.Count > 0)
+            {
+
+            }
         }
 
         private void Enable()
@@ -39,7 +52,27 @@ namespace BasicFinancialSystem
             userRegisterSearchButton.Enabled = false;
             userRegisterPrintButton.Enabled = false;
             userRegisterExitButton.Enabled = false;
-
         }
+
+        private void Disable()
+        {
+            userRegisterCodeText.Enabled = false;
+            userRegisterNameText.Enabled = false;
+            userRegisterLevelText.Enabled = false;
+            userRegisterLoginText.Enabled = false;
+            userRegisterPasswordText.Enabled = false;
+            userRegisterSaveButton.Enabled = false;
+            userRegisterCancelButton.Enabled = false;
+            userRegisterPreviousButton.Enabled = true;
+            userRegisterNextButton.Enabled = true;
+            userRegisterNewButton.Enabled = true;
+            userRegisterEditButton.Enabled = true;
+            userRegisterDeleteButton.Enabled = true;
+            userRegisterSearchButton.Enabled = true;
+            userRegisterPrintButton.Enabled = true;
+            userRegisterExitButton.Enabled = true;
+        }
+
+        
     }
 }
