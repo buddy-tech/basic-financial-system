@@ -19,7 +19,7 @@ namespace BasicFinancialSystem
 
         private void UserRegisterLoad(object sender, EventArgs e)
         {
-            this.userTableAdapter.Fill(this.Financial.user);
+            //this.userTableAdapter.Fill(this.Financial.user);
         }
 
         private void userRegisterPreviousButton_Click(object sender, EventArgs e)
@@ -29,10 +29,15 @@ namespace BasicFinancialSystem
 
         private void userRegisterDeleteButton_Click(object sender, EventArgs e)
         {
-            if(UserBindingSource.Count > 0)
+            /*if(UserBindingSource.Count > 0)
             {
 
-            }
+            }*/
+        }
+
+        private void userRegisterExitButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Enable()

@@ -221,6 +221,7 @@
             this.userRegisterExitButton.TabIndex = 19;
             this.userRegisterExitButton.Text = "Exit";
             this.userRegisterExitButton.UseVisualStyleBackColor = true;
+            this.userRegisterExitButton.Click += new System.EventHandler(this.userRegisterExitButton_Click);
             // 
             // UserRegisterForm
             // 
