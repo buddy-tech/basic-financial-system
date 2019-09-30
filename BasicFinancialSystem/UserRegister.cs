@@ -28,6 +28,11 @@ namespace BasicFinancialSystem
             userRegisterNameText.Enabled = true;
             userRegisterLevelText.Enabled = true;
             userRegisterLoginText.Enabled = true;
+            userRegisterPasswordText.Enabled = true;
+            userRegisterSaveButton.Enabled = true;
+            userRegisterCancelButton.Enabled = true;
+            userRegisterPreviousButton.Enabled = false;
+
         }
     }
 }
