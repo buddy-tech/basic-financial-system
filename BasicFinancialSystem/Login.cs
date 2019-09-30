@@ -24,6 +24,7 @@ namespace BasicFinancialSystem
                 PrincipalForm PrincipalForm = new PrincipalForm();
                 PrincipalForm.Show();
             }
+            Hide();
         }
 
         private void loginExitButton_Click(object sender, EventArgs e)

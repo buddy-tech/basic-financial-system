@@ -117,4 +117,225 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;loginPasswordText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="loginUsernameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>395, 450</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loginSignInButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 23</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginUsernameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 136</value>
+  </data>
+  <data name="loginInFormTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="loginInFormTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;loginInFormTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LoginForm</value>
+  </data>
+  <data name="&gt;&gt;loginLinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loginLinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loginInFormTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20.25pt</value>
+  </data>
+  <data name="loginPasswordText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 20</value>
+  </data>
+  <data name="&gt;&gt;loginLinkLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="loginExitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 321</value>
+  </data>
+  <data name="loginInFormTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 37</value>
+  </data>
+  <data name="&gt;&gt;loginLinkLabel.Name" xml:space="preserve">
+    <value>loginLinkLabel</value>
+  </data>
+  <data name="loginPasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;loginExitButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="loginLinkLabel.Text" xml:space="preserve">
+    <value>Software created by: @daviskooo</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="loginSignInButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordLabel.Name" xml:space="preserve">
+    <value>loginPasswordLabel</value>
+  </data>
+  <data name="loginUsernameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 102</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameText.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameText.Name" xml:space="preserve">
+    <value>loginUsernameText</value>
+  </data>
+  <data name="loginPasswordLabel.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="loginUsernameLabel.Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginPasswordLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;loginSignInButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="loginExitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;loginSignInButton.Name" xml:space="preserve">
+    <value>loginSignInButton</value>
+  </data>
+  <data name="loginUsernameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="&gt;&gt;loginExitButton.Name" xml:space="preserve">
+    <value>loginExitButton</value>
+  </data>
+  <data name="loginSignInButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 279</value>
+  </data>
+  <data name="loginUsernameText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;loginSignInButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loginExitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loginInFormTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="loginExitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 23</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordText.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="loginPasswordText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 216</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordText.Name" xml:space="preserve">
+    <value>loginPasswordText</value>
+  </data>
+  <data name="loginLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 13</value>
+  </data>
+  <data name="loginLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="loginInFormTitle.Text" xml:space="preserve">
+    <value>B.F.S</value>
+  </data>
+  <data name="&gt;&gt;loginInFormTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginExitButton.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginUsernameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 20</value>
+  </data>
+  <data name="loginPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Basic Financial System - Login</value>
+  </data>
+  <data name="loginUsernameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;loginInFormTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="loginLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;loginSignInButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="loginSignInButton.Text" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="&gt;&gt;loginPasswordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loginExitButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loginInFormTitle.Name" xml:space="preserve">
+    <value>loginInFormTitle</value>
+  </data>
+  <data name="loginLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 412</value>
+  </data>
+  <data name="&gt;&gt;loginUsernameLabel.Name" xml:space="preserve">
+    <value>loginUsernameLabel</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="loginPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 181</value>
+  </data>
+  <data name="loginPasswordText.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
