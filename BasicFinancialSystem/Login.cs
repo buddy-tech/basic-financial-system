@@ -16,5 +16,19 @@ namespace BasicFinancialSystem
         {
             InitializeComponent();
         }
+
+        private void loginSignInButton_Click(object sender, EventArgs e)
+        {
+            if(loginUsernameText.Text == "admin" && loginPasswordText.Text == "kblpt25")
+            {
+                PrincipalForm PrincipalForm = new PrincipalForm();
+                PrincipalForm.Show();
+            }
+        }
+
+        private void loginExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

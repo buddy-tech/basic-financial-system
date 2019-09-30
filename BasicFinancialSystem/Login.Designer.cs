@@ -78,6 +78,7 @@
             this.loginSignInButton.TabIndex = 4;
             this.loginSignInButton.Text = "Sign In";
             this.loginSignInButton.UseVisualStyleBackColor = true;
+            this.loginSignInButton.Click += new System.EventHandler(this.loginSignInButton_Click);
             // 
             // loginExitButton
             // 
@@ -87,6 +88,7 @@
             this.loginExitButton.TabIndex = 5;
             this.loginExitButton.Text = "Exit";
             this.loginExitButton.UseVisualStyleBackColor = true;
+            this.loginExitButton.Click += new System.EventHandler(this.loginExitButton_Click);
             // 
             // loginLinkLabel
             // 
