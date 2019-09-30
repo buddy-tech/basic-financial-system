@@ -138,6 +138,7 @@
             this.userRegisterPreviousButton.TabIndex = 10;
             this.userRegisterPreviousButton.Text = "Previous";
             this.userRegisterPreviousButton.UseVisualStyleBackColor = true;
+            this.userRegisterPreviousButton.Click += new System.EventHandler(this.userRegisterPreviousButton_Click);
             // 
             // userRegisterNextButton
             // 

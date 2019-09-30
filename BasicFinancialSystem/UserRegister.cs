@@ -16,5 +16,18 @@ namespace BasicFinancialSystem
         {
             InitializeComponent();
         }
+
+        private void userRegisterPreviousButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Enable()
+        {
+            userRegisterCodeText.Enabled = false;
+            userRegisterNameText.Enabled = true;
+            userRegisterLevelText.Enabled = true;
+            userRegisterLoginText.Enabled = true;
+        }
     }
 }
