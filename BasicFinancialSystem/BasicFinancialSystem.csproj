@@ -62,10 +62,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Financial.Designer.cs">
+    <Compile Include="FinancialDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Financial.xsd</DependentUpon>
+      <DependentUpon>FinancialDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -106,16 +106,16 @@
     <EmbeddedResource Include="UserRegister.resx">
       <DependentUpon>UserRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Financial.xsc">
-      <DependentUpon>Financial.xsd</DependentUpon>
+    <None Include="FinancialDataSet.xsc">
+      <DependentUpon>FinancialDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Financial.xsd">
+    <None Include="FinancialDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Financial.Designer.cs</LastGenOutput>
+      <LastGenOutput>FinancialDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Financial.xss">
-      <DependentUpon>Financial.xsd</DependentUpon>
+    <None Include="FinancialDataSet.xss">
+      <DependentUpon>FinancialDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
