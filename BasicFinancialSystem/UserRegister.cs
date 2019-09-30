@@ -32,6 +32,13 @@ namespace BasicFinancialSystem
             userRegisterSaveButton.Enabled = true;
             userRegisterCancelButton.Enabled = true;
             userRegisterPreviousButton.Enabled = false;
+            userRegisterNextButton.Enabled = false;
+            userRegisterNewButton.Enabled = false;
+            userRegisterEditButton.Enabled = false;
+            userRegisterDeleteButton.Enabled = false;
+            userRegisterSearchButton.Enabled = false;
+            userRegisterPrintButton.Enabled = false;
+            userRegisterExitButton.Enabled = false;
 
         }
     }
