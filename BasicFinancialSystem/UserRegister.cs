@@ -78,6 +78,19 @@ namespace BasicFinancialSystem
             userRegisterExitButton.Enabled = true;
         }
 
-        
+        private void userBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.userBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.financialDataSet);
+
+        }
+
+        private void UserRegisterForm_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'financialDataSet.User'. Você pode movê-la ou removê-la conforme necessário.
+            this.userTableAdapter.Fill(this.financialDataSet.User);
+
+        }
     }
 }
