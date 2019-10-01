@@ -112,7 +112,7 @@
             // userRegisterPasswordLabel
             // 
             this.userRegisterPasswordLabel.AutoSize = true;
-            this.userRegisterPasswordLabel.Location = new System.Drawing.Point(60, 223);
+            this.userRegisterPasswordLabel.Location = new System.Drawing.Point(40, 220);
             this.userRegisterPasswordLabel.Name = "userRegisterPasswordLabel";
             this.userRegisterPasswordLabel.Size = new System.Drawing.Size(56, 13);
             this.userRegisterPasswordLabel.TabIndex = 8;
@@ -120,7 +120,7 @@
             // 
             // userRegisterPreviousButton
             // 
-            this.userRegisterPreviousButton.Location = new System.Drawing.Point(60, 325);
+            this.userRegisterPreviousButton.Location = new System.Drawing.Point(41, 292);
             this.userRegisterPreviousButton.Name = "userRegisterPreviousButton";
             this.userRegisterPreviousButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterPreviousButton.TabIndex = 10;
@@ -130,7 +130,7 @@
             // 
             // userRegisterNextButton
             // 
-            this.userRegisterNextButton.Location = new System.Drawing.Point(141, 325);
+            this.userRegisterNextButton.Location = new System.Drawing.Point(124, 292);
             this.userRegisterNextButton.Name = "userRegisterNextButton";
             this.userRegisterNextButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterNextButton.TabIndex = 11;
@@ -139,7 +139,7 @@
             // 
             // userRegisterNewButton
             // 
-            this.userRegisterNewButton.Location = new System.Drawing.Point(222, 325);
+            this.userRegisterNewButton.Location = new System.Drawing.Point(318, 292);
             this.userRegisterNewButton.Name = "userRegisterNewButton";
             this.userRegisterNewButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterNewButton.TabIndex = 12;
@@ -148,7 +148,7 @@
             // 
             // userRegisterEditButton
             // 
-            this.userRegisterEditButton.Location = new System.Drawing.Point(304, 325);
+            this.userRegisterEditButton.Location = new System.Drawing.Point(224, 292);
             this.userRegisterEditButton.Name = "userRegisterEditButton";
             this.userRegisterEditButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterEditButton.TabIndex = 13;
@@ -157,7 +157,7 @@
             // 
             // userRegisterDeleteButton
             // 
-            this.userRegisterDeleteButton.Location = new System.Drawing.Point(385, 325);
+            this.userRegisterDeleteButton.Location = new System.Drawing.Point(318, 325);
             this.userRegisterDeleteButton.Name = "userRegisterDeleteButton";
             this.userRegisterDeleteButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterDeleteButton.TabIndex = 14;
@@ -167,7 +167,7 @@
             // 
             // userRegisterSaveButton
             // 
-            this.userRegisterSaveButton.Location = new System.Drawing.Point(60, 355);
+            this.userRegisterSaveButton.Location = new System.Drawing.Point(41, 325);
             this.userRegisterSaveButton.Name = "userRegisterSaveButton";
             this.userRegisterSaveButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterSaveButton.TabIndex = 15;
@@ -176,7 +176,7 @@
             // 
             // userRegisterCancelButton
             // 
-            this.userRegisterCancelButton.Location = new System.Drawing.Point(142, 355);
+            this.userRegisterCancelButton.Location = new System.Drawing.Point(124, 325);
             this.userRegisterCancelButton.Name = "userRegisterCancelButton";
             this.userRegisterCancelButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterCancelButton.TabIndex = 16;
@@ -185,7 +185,7 @@
             // 
             // userRegisterSearchButton
             // 
-            this.userRegisterSearchButton.Location = new System.Drawing.Point(224, 355);
+            this.userRegisterSearchButton.Location = new System.Drawing.Point(224, 325);
             this.userRegisterSearchButton.Name = "userRegisterSearchButton";
             this.userRegisterSearchButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterSearchButton.TabIndex = 17;
@@ -194,7 +194,7 @@
             // 
             // userRegisterPrintButton
             // 
-            this.userRegisterPrintButton.Location = new System.Drawing.Point(306, 355);
+            this.userRegisterPrintButton.Location = new System.Drawing.Point(578, 55);
             this.userRegisterPrintButton.Name = "userRegisterPrintButton";
             this.userRegisterPrintButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterPrintButton.TabIndex = 18;
@@ -203,7 +203,7 @@
             // 
             // userRegisterExitButton
             // 
-            this.userRegisterExitButton.Location = new System.Drawing.Point(388, 355);
+            this.userRegisterExitButton.Location = new System.Drawing.Point(578, 325);
             this.userRegisterExitButton.Name = "userRegisterExitButton";
             this.userRegisterExitButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterExitButton.TabIndex = 19;
@@ -261,7 +261,7 @@
             this.userBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.userBindingNavigator.Name = "userBindingNavigator";
             this.userBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.userBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.userBindingNavigator.Size = new System.Drawing.Size(726, 25);
             this.userBindingNavigator.TabIndex = 20;
             this.userBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -364,46 +364,47 @@
             this.userRegisterCodeText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "id", true));
             this.userRegisterCodeText.Location = new System.Drawing.Point(103, 62);
             this.userRegisterCodeText.Name = "userRegisterCodeText";
-            this.userRegisterCodeText.Size = new System.Drawing.Size(100, 20);
+            this.userRegisterCodeText.Size = new System.Drawing.Size(57, 20);
             this.userRegisterCodeText.TabIndex = 22;
             // 
             // userRegisterNameText
             // 
             this.userRegisterNameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "name", true));
-            this.userRegisterNameText.Location = new System.Drawing.Point(101, 101);
+            this.userRegisterNameText.Location = new System.Drawing.Point(103, 101);
             this.userRegisterNameText.Name = "userRegisterNameText";
-            this.userRegisterNameText.Size = new System.Drawing.Size(100, 20);
+            this.userRegisterNameText.Size = new System.Drawing.Size(290, 20);
             this.userRegisterNameText.TabIndex = 24;
             // 
             // userRegisterLevelText
             // 
             this.userRegisterLevelText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "level", true));
-            this.userRegisterLevelText.Location = new System.Drawing.Point(99, 143);
+            this.userRegisterLevelText.Location = new System.Drawing.Point(103, 139);
             this.userRegisterLevelText.Name = "userRegisterLevelText";
-            this.userRegisterLevelText.Size = new System.Drawing.Size(100, 20);
+            this.userRegisterLevelText.Size = new System.Drawing.Size(28, 20);
             this.userRegisterLevelText.TabIndex = 26;
             // 
             // userRegisterLoginText
             // 
             this.userRegisterLoginText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "login", true));
-            this.userRegisterLoginText.Location = new System.Drawing.Point(101, 182);
+            this.userRegisterLoginText.Location = new System.Drawing.Point(103, 178);
             this.userRegisterLoginText.Name = "userRegisterLoginText";
-            this.userRegisterLoginText.Size = new System.Drawing.Size(100, 20);
+            this.userRegisterLoginText.Size = new System.Drawing.Size(196, 20);
             this.userRegisterLoginText.TabIndex = 28;
             // 
             // userRegisterPasswordText
             // 
             this.userRegisterPasswordText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "password", true));
-            this.userRegisterPasswordText.Location = new System.Drawing.Point(122, 220);
+            this.userRegisterPasswordText.Location = new System.Drawing.Point(103, 217);
             this.userRegisterPasswordText.Name = "userRegisterPasswordText";
-            this.userRegisterPasswordText.Size = new System.Drawing.Size(100, 20);
+            this.userRegisterPasswordText.Size = new System.Drawing.Size(196, 20);
             this.userRegisterPasswordText.TabIndex = 30;
+            this.userRegisterPasswordText.UseSystemPasswordChar = true;
             // 
             // UserRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(726, 402);
             this.Controls.Add(this.userRegisterCodeText);
             this.Controls.Add(this.userRegisterNameText);
             this.Controls.Add(this.userRegisterLevelText);
