@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.loginUsernameLabel = new System.Windows.Forms.Label();
             this.loginUsernameText = new System.Windows.Forms.TextBox();
             this.loginPasswordLabel = new System.Windows.Forms.Label();
@@ -40,81 +41,54 @@
             // 
             // loginUsernameLabel
             // 
-            this.loginUsernameLabel.AutoSize = true;
-            this.loginUsernameLabel.Location = new System.Drawing.Point(55, 102);
+            resources.ApplyResources(this.loginUsernameLabel, "loginUsernameLabel");
             this.loginUsernameLabel.Name = "loginUsernameLabel";
-            this.loginUsernameLabel.Size = new System.Drawing.Size(58, 13);
-            this.loginUsernameLabel.TabIndex = 0;
-            this.loginUsernameLabel.Text = "Username:";
             // 
             // loginUsernameText
             // 
-            this.loginUsernameText.Location = new System.Drawing.Point(58, 136);
+            resources.ApplyResources(this.loginUsernameText, "loginUsernameText");
             this.loginUsernameText.Name = "loginUsernameText";
-            this.loginUsernameText.Size = new System.Drawing.Size(286, 20);
-            this.loginUsernameText.TabIndex = 1;
             // 
             // loginPasswordLabel
             // 
-            this.loginPasswordLabel.AutoSize = true;
-            this.loginPasswordLabel.Location = new System.Drawing.Point(58, 181);
+            resources.ApplyResources(this.loginPasswordLabel, "loginPasswordLabel");
             this.loginPasswordLabel.Name = "loginPasswordLabel";
-            this.loginPasswordLabel.Size = new System.Drawing.Size(56, 13);
-            this.loginPasswordLabel.TabIndex = 2;
-            this.loginPasswordLabel.Text = "Password:";
             // 
             // loginPasswordText
             // 
-            this.loginPasswordText.Location = new System.Drawing.Point(58, 216);
+            resources.ApplyResources(this.loginPasswordText, "loginPasswordText");
             this.loginPasswordText.Name = "loginPasswordText";
-            this.loginPasswordText.Size = new System.Drawing.Size(286, 20);
-            this.loginPasswordText.TabIndex = 3;
+            this.loginPasswordText.UseSystemPasswordChar = true;
             // 
             // loginSignInButton
             // 
-            this.loginSignInButton.Location = new System.Drawing.Point(58, 279);
+            resources.ApplyResources(this.loginSignInButton, "loginSignInButton");
             this.loginSignInButton.Name = "loginSignInButton";
-            this.loginSignInButton.Size = new System.Drawing.Size(286, 23);
-            this.loginSignInButton.TabIndex = 4;
-            this.loginSignInButton.Text = "Sign In";
             this.loginSignInButton.UseVisualStyleBackColor = true;
             this.loginSignInButton.Click += new System.EventHandler(this.loginSignInButton_Click);
             // 
             // loginExitButton
             // 
-            this.loginExitButton.Location = new System.Drawing.Point(58, 321);
+            resources.ApplyResources(this.loginExitButton, "loginExitButton");
             this.loginExitButton.Name = "loginExitButton";
-            this.loginExitButton.Size = new System.Drawing.Size(286, 23);
-            this.loginExitButton.TabIndex = 5;
-            this.loginExitButton.Text = "Exit";
             this.loginExitButton.UseVisualStyleBackColor = true;
             this.loginExitButton.Click += new System.EventHandler(this.loginExitButton_Click);
             // 
             // loginLinkLabel
             // 
-            this.loginLinkLabel.AutoSize = true;
-            this.loginLinkLabel.Location = new System.Drawing.Point(121, 412);
+            resources.ApplyResources(this.loginLinkLabel, "loginLinkLabel");
             this.loginLinkLabel.Name = "loginLinkLabel";
-            this.loginLinkLabel.Size = new System.Drawing.Size(168, 13);
-            this.loginLinkLabel.TabIndex = 6;
             this.loginLinkLabel.TabStop = true;
-            this.loginLinkLabel.Text = "Software created by: @daviskooo";
             // 
             // loginInFormTitle
             // 
-            this.loginInFormTitle.AutoSize = true;
-            this.loginInFormTitle.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginInFormTitle.Location = new System.Drawing.Point(159, 40);
+            resources.ApplyResources(this.loginInFormTitle, "loginInFormTitle");
             this.loginInFormTitle.Name = "loginInFormTitle";
-            this.loginInFormTitle.Size = new System.Drawing.Size(71, 37);
-            this.loginInFormTitle.TabIndex = 7;
-            this.loginInFormTitle.Text = "B.F.S";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 450);
             this.Controls.Add(this.loginInFormTitle);
             this.Controls.Add(this.loginLinkLabel);
             this.Controls.Add(this.loginExitButton);
@@ -124,7 +98,6 @@
             this.Controls.Add(this.loginUsernameText);
             this.Controls.Add(this.loginUsernameLabel);
             this.Name = "LoginForm";
-            this.Text = "Basic Financial System - Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

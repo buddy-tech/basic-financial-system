@@ -16,5 +16,16 @@ namespace BasicFinancialSystem
         {
             InitializeComponent();
         }
+
+        private void registrationUsersItem_Click(object sender, EventArgs e)
+        {
+            UserRegisterForm userRegisterForm = new UserRegisterForm();
+            userRegisterForm.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
