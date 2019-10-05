@@ -75,6 +75,7 @@
             this.cnpjTextBox = new System.Windows.Forms.TextBox();
             this.providerRegisterRGText = new System.Windows.Forms.TextBox();
             this.providerRegisterStateSubscriptionText = new System.Windows.Forms.TextBox();
+            this.providerRegisterPrintButton = new System.Windows.Forms.Button();
             providerRegisterCodeLabel = new System.Windows.Forms.Label();
             providerRegisterNameLabel = new System.Windows.Forms.Label();
             providerRegisterAddressLabel = new System.Windows.Forms.Label();
@@ -145,7 +146,7 @@
             this.providerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.providerBindingNavigator.Name = "providerBindingNavigator";
             this.providerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.providerBindingNavigator.Size = new System.Drawing.Size(761, 25);
+            this.providerBindingNavigator.Size = new System.Drawing.Size(721, 25);
             this.providerBindingNavigator.TabIndex = 0;
             this.providerBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -481,11 +482,21 @@
             this.providerRegisterStateSubscriptionText.Size = new System.Drawing.Size(126, 20);
             this.providerRegisterStateSubscriptionText.TabIndex = 28;
             // 
+            // providerRegisterPrintButton
+            // 
+            this.providerRegisterPrintButton.Location = new System.Drawing.Point(623, 47);
+            this.providerRegisterPrintButton.Name = "providerRegisterPrintButton";
+            this.providerRegisterPrintButton.Size = new System.Drawing.Size(75, 23);
+            this.providerRegisterPrintButton.TabIndex = 29;
+            this.providerRegisterPrintButton.Text = "Print";
+            this.providerRegisterPrintButton.UseVisualStyleBackColor = true;
+            // 
             // ProviderRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 386);
+            this.ClientSize = new System.Drawing.Size(721, 497);
+            this.Controls.Add(this.providerRegisterPrintButton);
             this.Controls.Add(providerRegisterCodeLabel);
             this.Controls.Add(this.providerRegisterCodeText);
             this.Controls.Add(providerRegisterNameLabel);
@@ -561,5 +572,6 @@
         private System.Windows.Forms.TextBox cnpjTextBox;
         private System.Windows.Forms.TextBox providerRegisterRGText;
         private System.Windows.Forms.TextBox providerRegisterStateSubscriptionText;
+        private System.Windows.Forms.Button providerRegisterPrintButton;
     }
 }
