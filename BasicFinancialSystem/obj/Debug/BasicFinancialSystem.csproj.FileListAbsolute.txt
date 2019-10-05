@@ -26,3 +26,17 @@ C:\Users\aluno2\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\Ba
 C:\Users\aluno2\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.csproj.CoreCompileInputs.cache
 C:\Users\aluno2\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.exe
 C:\Users\aluno2\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.pdb
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\bin\Debug\Financial.mdf
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\bin\Debug\Financial_log.ldf
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\bin\Debug\BasicFinancialSystem.exe.config
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\bin\Debug\BasicFinancialSystem.exe
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\bin\Debug\BasicFinancialSystem.pdb
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.csprojAssemblyReference.cache
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.LoginForm.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.PrincipalForm.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.Properties.Resources.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.UserRegisterForm.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.csproj.GenerateResource.cache
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.csproj.CoreCompileInputs.cache
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.exe
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.pdb
