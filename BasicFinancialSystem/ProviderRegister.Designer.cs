@@ -40,7 +40,7 @@
             System.Windows.Forms.Label providerRegisterPhoneLabel;
             System.Windows.Forms.Label providerRegisterEmailLabel;
             System.Windows.Forms.Label providerRegisterTypeLabel;
-            System.Windows.Forms.Label cpfLabel;
+            System.Windows.Forms.Label providerRegisterCPFLabel;
             System.Windows.Forms.Label providerRegisterCNPJLabel;
             System.Windows.Forms.Label rgLabel;
             System.Windows.Forms.Label providerRegisterStateSubscriptionLabel;
@@ -71,7 +71,7 @@
             this.providerRegisterPhoneText = new System.Windows.Forms.TextBox();
             this.providerRegisterEmailText = new System.Windows.Forms.TextBox();
             this.typeTextBox = new System.Windows.Forms.TextBox();
-            this.cpfTextBox = new System.Windows.Forms.TextBox();
+            this.providerRegisterCPFText = new System.Windows.Forms.TextBox();
             this.cnpjTextBox = new System.Windows.Forms.TextBox();
             this.rgTextBox = new System.Windows.Forms.TextBox();
             this.providerRegisterStateSubscriptionText = new System.Windows.Forms.TextBox();
@@ -85,7 +85,7 @@
             providerRegisterPhoneLabel = new System.Windows.Forms.Label();
             providerRegisterEmailLabel = new System.Windows.Forms.Label();
             providerRegisterTypeLabel = new System.Windows.Forms.Label();
-            cpfLabel = new System.Windows.Forms.Label();
+            providerRegisterCPFLabel = new System.Windows.Forms.Label();
             providerRegisterCNPJLabel = new System.Windows.Forms.Label();
             rgLabel = new System.Windows.Forms.Label();
             providerRegisterStateSubscriptionLabel = new System.Windows.Forms.Label();
@@ -413,22 +413,22 @@
             this.typeTextBox.Size = new System.Drawing.Size(31, 20);
             this.typeTextBox.TabIndex = 20;
             // 
-            // cpfLabel
+            // providerRegisterCPFLabel
             // 
-            cpfLabel.AutoSize = true;
-            cpfLabel.Location = new System.Drawing.Point(501, 298);
-            cpfLabel.Name = "cpfLabel";
-            cpfLabel.Size = new System.Drawing.Size(25, 13);
-            cpfLabel.TabIndex = 21;
-            cpfLabel.Text = "cpf:";
+            providerRegisterCPFLabel.AutoSize = true;
+            providerRegisterCPFLabel.Location = new System.Drawing.Point(238, 328);
+            providerRegisterCPFLabel.Name = "providerRegisterCPFLabel";
+            providerRegisterCPFLabel.Size = new System.Drawing.Size(30, 13);
+            providerRegisterCPFLabel.TabIndex = 21;
+            providerRegisterCPFLabel.Text = "CPF:";
             // 
-            // cpfTextBox
+            // providerRegisterCPFText
             // 
-            this.cpfTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "cpf", true));
-            this.cpfTextBox.Location = new System.Drawing.Point(601, 295);
-            this.cpfTextBox.Name = "cpfTextBox";
-            this.cpfTextBox.Size = new System.Drawing.Size(100, 20);
-            this.cpfTextBox.TabIndex = 22;
+            this.providerRegisterCPFText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "cpf", true));
+            this.providerRegisterCPFText.Location = new System.Drawing.Point(241, 350);
+            this.providerRegisterCPFText.Name = "providerRegisterCPFText";
+            this.providerRegisterCPFText.Size = new System.Drawing.Size(147, 20);
+            this.providerRegisterCPFText.TabIndex = 22;
             // 
             // providerRegisterCNPJLabel
             // 
@@ -506,8 +506,8 @@
             this.Controls.Add(this.providerRegisterEmailText);
             this.Controls.Add(providerRegisterTypeLabel);
             this.Controls.Add(this.typeTextBox);
-            this.Controls.Add(cpfLabel);
-            this.Controls.Add(this.cpfTextBox);
+            this.Controls.Add(providerRegisterCPFLabel);
+            this.Controls.Add(this.providerRegisterCPFText);
             this.Controls.Add(providerRegisterCNPJLabel);
             this.Controls.Add(this.cnpjTextBox);
             this.Controls.Add(rgLabel);
@@ -557,7 +557,7 @@
         private System.Windows.Forms.TextBox providerRegisterPhoneText;
         private System.Windows.Forms.TextBox providerRegisterEmailText;
         private System.Windows.Forms.TextBox typeTextBox;
-        private System.Windows.Forms.TextBox cpfTextBox;
+        private System.Windows.Forms.TextBox providerRegisterCPFText;
         private System.Windows.Forms.TextBox cnpjTextBox;
         private System.Windows.Forms.TextBox rgTextBox;
         private System.Windows.Forms.TextBox providerRegisterStateSubscriptionText;
