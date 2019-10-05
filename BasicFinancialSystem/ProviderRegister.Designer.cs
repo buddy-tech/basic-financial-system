@@ -76,6 +76,8 @@
             this.providerRegisterRGText = new System.Windows.Forms.TextBox();
             this.providerRegisterStateSubscriptionText = new System.Windows.Forms.TextBox();
             this.providerRegisterPrintButton = new System.Windows.Forms.Button();
+            this.providerRegisterPreviousButton = new System.Windows.Forms.Button();
+            this.providerRegisterNextButton = new System.Windows.Forms.Button();
             providerRegisterCodeLabel = new System.Windows.Forms.Label();
             providerRegisterNameLabel = new System.Windows.Forms.Label();
             providerRegisterAddressLabel = new System.Windows.Forms.Label();
@@ -434,7 +436,7 @@
             // providerRegisterCNPJLabel
             // 
             providerRegisterCNPJLabel.AutoSize = true;
-            providerRegisterCNPJLabel.Location = new System.Drawing.Point(52, 328);
+            providerRegisterCNPJLabel.Location = new System.Drawing.Point(48, 328);
             providerRegisterCNPJLabel.Name = "providerRegisterCNPJLabel";
             providerRegisterCNPJLabel.Size = new System.Drawing.Size(145, 13);
             providerRegisterCNPJLabel.TabIndex = 23;
@@ -443,7 +445,7 @@
             // cnpjTextBox
             // 
             this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "cnpj", true));
-            this.cnpjTextBox.Location = new System.Drawing.Point(55, 350);
+            this.cnpjTextBox.Location = new System.Drawing.Point(51, 350);
             this.cnpjTextBox.Name = "cnpjTextBox";
             this.cnpjTextBox.Size = new System.Drawing.Size(158, 20);
             this.cnpjTextBox.TabIndex = 24;
@@ -491,11 +493,31 @@
             this.providerRegisterPrintButton.Text = "Print";
             this.providerRegisterPrintButton.UseVisualStyleBackColor = true;
             // 
+            // providerRegisterPreviousButton
+            // 
+            this.providerRegisterPreviousButton.Location = new System.Drawing.Point(51, 405);
+            this.providerRegisterPreviousButton.Name = "providerRegisterPreviousButton";
+            this.providerRegisterPreviousButton.Size = new System.Drawing.Size(75, 23);
+            this.providerRegisterPreviousButton.TabIndex = 30;
+            this.providerRegisterPreviousButton.Text = "Previous";
+            this.providerRegisterPreviousButton.UseVisualStyleBackColor = true;
+            // 
+            // providerRegisterNextButton
+            // 
+            this.providerRegisterNextButton.Location = new System.Drawing.Point(144, 405);
+            this.providerRegisterNextButton.Name = "providerRegisterNextButton";
+            this.providerRegisterNextButton.Size = new System.Drawing.Size(75, 23);
+            this.providerRegisterNextButton.TabIndex = 31;
+            this.providerRegisterNextButton.Text = "Next";
+            this.providerRegisterNextButton.UseVisualStyleBackColor = true;
+            // 
             // ProviderRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(721, 497);
+            this.Controls.Add(this.providerRegisterNextButton);
+            this.Controls.Add(this.providerRegisterPreviousButton);
             this.Controls.Add(this.providerRegisterPrintButton);
             this.Controls.Add(providerRegisterCodeLabel);
             this.Controls.Add(this.providerRegisterCodeText);
@@ -573,5 +595,7 @@
         private System.Windows.Forms.TextBox providerRegisterRGText;
         private System.Windows.Forms.TextBox providerRegisterStateSubscriptionText;
         private System.Windows.Forms.Button providerRegisterPrintButton;
+        private System.Windows.Forms.Button providerRegisterPreviousButton;
+        private System.Windows.Forms.Button providerRegisterNextButton;
     }
 }
