@@ -78,6 +78,8 @@
             this.providerRegisterPrintButton = new System.Windows.Forms.Button();
             this.providerRegisterPreviousButton = new System.Windows.Forms.Button();
             this.providerRegisterNextButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             providerRegisterCodeLabel = new System.Windows.Forms.Label();
             providerRegisterNameLabel = new System.Windows.Forms.Label();
             providerRegisterAddressLabel = new System.Windows.Forms.Label();
@@ -96,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerBindingNavigator)).BeginInit();
             this.providerBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // financialDataSet
@@ -148,7 +151,7 @@
             this.providerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.providerBindingNavigator.Name = "providerBindingNavigator";
             this.providerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.providerBindingNavigator.Size = new System.Drawing.Size(721, 25);
+            this.providerBindingNavigator.Size = new System.Drawing.Size(1101, 25);
             this.providerBindingNavigator.TabIndex = 0;
             this.providerBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -511,11 +514,34 @@
             this.providerRegisterNextButton.Text = "Next";
             this.providerRegisterNextButton.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(907, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(194, 501);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(917, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 32);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Searching for:";
+            // 
             // ProviderRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 497);
+            this.ClientSize = new System.Drawing.Size(1101, 497);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.providerRegisterNextButton);
             this.Controls.Add(this.providerRegisterPreviousButton);
             this.Controls.Add(this.providerRegisterPrintButton);
@@ -556,6 +582,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.providerBindingNavigator)).EndInit();
             this.providerBindingNavigator.ResumeLayout(false);
             this.providerBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -597,5 +624,7 @@
         private System.Windows.Forms.Button providerRegisterPrintButton;
         private System.Windows.Forms.Button providerRegisterPreviousButton;
         private System.Windows.Forms.Button providerRegisterNextButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
