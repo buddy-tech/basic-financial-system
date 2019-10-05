@@ -42,7 +42,7 @@
             System.Windows.Forms.Label providerRegisterTypeLabel;
             System.Windows.Forms.Label providerRegisterCPFLabel;
             System.Windows.Forms.Label providerRegisterCNPJLabel;
-            System.Windows.Forms.Label rgLabel;
+            System.Windows.Forms.Label providerRegisterRGLabel;
             System.Windows.Forms.Label providerRegisterStateSubscriptionLabel;
             this.financialDataSet = new BasicFinancialSystem.FinancialDataSet();
             this.providerBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -73,7 +73,7 @@
             this.typeTextBox = new System.Windows.Forms.TextBox();
             this.providerRegisterCPFText = new System.Windows.Forms.TextBox();
             this.cnpjTextBox = new System.Windows.Forms.TextBox();
-            this.rgTextBox = new System.Windows.Forms.TextBox();
+            this.providerRegisterRGText = new System.Windows.Forms.TextBox();
             this.providerRegisterStateSubscriptionText = new System.Windows.Forms.TextBox();
             providerRegisterCodeLabel = new System.Windows.Forms.Label();
             providerRegisterNameLabel = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@
             providerRegisterTypeLabel = new System.Windows.Forms.Label();
             providerRegisterCPFLabel = new System.Windows.Forms.Label();
             providerRegisterCNPJLabel = new System.Windows.Forms.Label();
-            rgLabel = new System.Windows.Forms.Label();
+            providerRegisterRGLabel = new System.Windows.Forms.Label();
             providerRegisterStateSubscriptionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).BeginInit();
@@ -308,7 +308,7 @@
             this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "city", true));
             this.cityTextBox.Location = new System.Drawing.Point(505, 149);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(130, 20);
+            this.cityTextBox.Size = new System.Drawing.Size(100, 20);
             this.cityTextBox.TabIndex = 8;
             // 
             // providerRegisterNeighborhoodLabel
@@ -342,7 +342,7 @@
             this.stateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "state", true));
             this.stateTextBox.Location = new System.Drawing.Point(372, 196);
             this.stateTextBox.Name = "stateTextBox";
-            this.stateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.stateTextBox.Size = new System.Drawing.Size(108, 20);
             this.stateTextBox.TabIndex = 12;
             // 
             // providerRegisterPostalCodeLabel
@@ -376,7 +376,7 @@
             this.providerRegisterPhoneText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "phone", true));
             this.providerRegisterPhoneText.Location = new System.Drawing.Point(372, 245);
             this.providerRegisterPhoneText.Name = "providerRegisterPhoneText";
-            this.providerRegisterPhoneText.Size = new System.Drawing.Size(136, 20);
+            this.providerRegisterPhoneText.Size = new System.Drawing.Size(108, 20);
             this.providerRegisterPhoneText.TabIndex = 16;
             // 
             // providerRegisterEmailLabel
@@ -427,7 +427,7 @@
             this.providerRegisterCPFText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "cpf", true));
             this.providerRegisterCPFText.Location = new System.Drawing.Point(241, 350);
             this.providerRegisterCPFText.Name = "providerRegisterCPFText";
-            this.providerRegisterCPFText.Size = new System.Drawing.Size(147, 20);
+            this.providerRegisterCPFText.Size = new System.Drawing.Size(163, 20);
             this.providerRegisterCPFText.TabIndex = 22;
             // 
             // providerRegisterCNPJLabel
@@ -444,25 +444,25 @@
             this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "cnpj", true));
             this.cnpjTextBox.Location = new System.Drawing.Point(55, 350);
             this.cnpjTextBox.Name = "cnpjTextBox";
-            this.cnpjTextBox.Size = new System.Drawing.Size(142, 20);
+            this.cnpjTextBox.Size = new System.Drawing.Size(158, 20);
             this.cnpjTextBox.TabIndex = 24;
             // 
-            // rgLabel
+            // providerRegisterRGLabel
             // 
-            rgLabel.AutoSize = true;
-            rgLabel.Location = new System.Drawing.Point(501, 350);
-            rgLabel.Name = "rgLabel";
-            rgLabel.Size = new System.Drawing.Size(19, 13);
-            rgLabel.TabIndex = 25;
-            rgLabel.Text = "rg:";
+            providerRegisterRGLabel.AutoSize = true;
+            providerRegisterRGLabel.Location = new System.Drawing.Point(426, 328);
+            providerRegisterRGLabel.Name = "providerRegisterRGLabel";
+            providerRegisterRGLabel.Size = new System.Drawing.Size(26, 13);
+            providerRegisterRGLabel.TabIndex = 25;
+            providerRegisterRGLabel.Text = "RG:";
             // 
-            // rgTextBox
+            // providerRegisterRGText
             // 
-            this.rgTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "rg", true));
-            this.rgTextBox.Location = new System.Drawing.Point(601, 347);
-            this.rgTextBox.Name = "rgTextBox";
-            this.rgTextBox.Size = new System.Drawing.Size(100, 20);
-            this.rgTextBox.TabIndex = 26;
+            this.providerRegisterRGText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "rg", true));
+            this.providerRegisterRGText.Location = new System.Drawing.Point(429, 350);
+            this.providerRegisterRGText.Name = "providerRegisterRGText";
+            this.providerRegisterRGText.Size = new System.Drawing.Size(176, 20);
+            this.providerRegisterRGText.TabIndex = 26;
             // 
             // providerRegisterStateSubscriptionLabel
             // 
@@ -510,8 +510,8 @@
             this.Controls.Add(this.providerRegisterCPFText);
             this.Controls.Add(providerRegisterCNPJLabel);
             this.Controls.Add(this.cnpjTextBox);
-            this.Controls.Add(rgLabel);
-            this.Controls.Add(this.rgTextBox);
+            this.Controls.Add(providerRegisterRGLabel);
+            this.Controls.Add(this.providerRegisterRGText);
             this.Controls.Add(providerRegisterStateSubscriptionLabel);
             this.Controls.Add(this.providerRegisterStateSubscriptionText);
             this.Controls.Add(this.providerBindingNavigator);
@@ -559,7 +559,7 @@
         private System.Windows.Forms.TextBox typeTextBox;
         private System.Windows.Forms.TextBox providerRegisterCPFText;
         private System.Windows.Forms.TextBox cnpjTextBox;
-        private System.Windows.Forms.TextBox rgTextBox;
+        private System.Windows.Forms.TextBox providerRegisterRGText;
         private System.Windows.Forms.TextBox providerRegisterStateSubscriptionText;
     }
 }
