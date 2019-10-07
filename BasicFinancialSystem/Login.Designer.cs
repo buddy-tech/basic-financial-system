@@ -46,6 +46,7 @@
             // 
             // loginUsernameText
             // 
+            this.loginUsernameText.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.loginUsernameText, "loginUsernameText");
             this.loginUsernameText.Name = "loginUsernameText";
             // 
