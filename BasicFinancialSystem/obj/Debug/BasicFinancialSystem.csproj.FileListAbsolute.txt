@@ -40,3 +40,7 @@ C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\Ba
 C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.csproj.CoreCompileInputs.cache
 C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.exe
 C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.pdb
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.BillsToReceiveRegister.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.BillToPayRegister.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.CustomerRegister.resources
+C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.ProviderRegister.resources

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProviderRegister));
             System.Windows.Forms.Label providerRegisterCodeLabel;
             System.Windows.Forms.Label providerRegisterNameLabel;
             System.Windows.Forms.Label providerRegisterAddressLabel;
@@ -44,22 +43,23 @@
             System.Windows.Forms.Label providerRegisterCNPJLabel;
             System.Windows.Forms.Label providerRegisterRGLabel;
             System.Windows.Forms.Label providerRegisterStateSubscriptionLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProviderRegister));
             this.financialDataSet = new BasicFinancialSystem.FinancialDataSet();
             this.providerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.providerTableAdapter = new BasicFinancialSystem.FinancialDataSetTableAdapters.ProviderTableAdapter();
             this.tableAdapterManager = new BasicFinancialSystem.FinancialDataSetTableAdapters.TableAdapterManager();
             this.providerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.providerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.providerRegisterCodeText = new System.Windows.Forms.TextBox();
             this.providerRegisterNameText = new System.Windows.Forms.TextBox();
@@ -100,6 +100,132 @@
             this.providerBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // providerRegisterCodeLabel
+            // 
+            providerRegisterCodeLabel.AutoSize = true;
+            providerRegisterCodeLabel.Location = new System.Drawing.Point(48, 34);
+            providerRegisterCodeLabel.Name = "providerRegisterCodeLabel";
+            providerRegisterCodeLabel.Size = new System.Drawing.Size(35, 13);
+            providerRegisterCodeLabel.TabIndex = 1;
+            providerRegisterCodeLabel.Text = "Code:";
+            // 
+            // providerRegisterNameLabel
+            // 
+            providerRegisterNameLabel.AutoSize = true;
+            providerRegisterNameLabel.Location = new System.Drawing.Point(48, 86);
+            providerRegisterNameLabel.Name = "providerRegisterNameLabel";
+            providerRegisterNameLabel.Size = new System.Drawing.Size(38, 13);
+            providerRegisterNameLabel.TabIndex = 3;
+            providerRegisterNameLabel.Text = "Name:";
+            // 
+            // providerRegisterAddressLabel
+            // 
+            providerRegisterAddressLabel.AutoSize = true;
+            providerRegisterAddressLabel.Location = new System.Drawing.Point(49, 133);
+            providerRegisterAddressLabel.Name = "providerRegisterAddressLabel";
+            providerRegisterAddressLabel.Size = new System.Drawing.Size(48, 13);
+            providerRegisterAddressLabel.TabIndex = 5;
+            providerRegisterAddressLabel.Text = "Address:";
+            // 
+            // providerRegisterCityLabel
+            // 
+            providerRegisterCityLabel.AutoSize = true;
+            providerRegisterCityLabel.Location = new System.Drawing.Point(502, 133);
+            providerRegisterCityLabel.Name = "providerRegisterCityLabel";
+            providerRegisterCityLabel.Size = new System.Drawing.Size(27, 13);
+            providerRegisterCityLabel.TabIndex = 7;
+            providerRegisterCityLabel.Text = "City:";
+            // 
+            // providerRegisterNeighborhoodLabel
+            // 
+            providerRegisterNeighborhoodLabel.AutoSize = true;
+            providerRegisterNeighborhoodLabel.Location = new System.Drawing.Point(334, 133);
+            providerRegisterNeighborhoodLabel.Name = "providerRegisterNeighborhoodLabel";
+            providerRegisterNeighborhoodLabel.Size = new System.Drawing.Size(77, 13);
+            providerRegisterNeighborhoodLabel.TabIndex = 9;
+            providerRegisterNeighborhoodLabel.Text = "Neighborhood:";
+            // 
+            // providerRegisterStateLabel
+            // 
+            providerRegisterStateLabel.AutoSize = true;
+            providerRegisterStateLabel.Location = new System.Drawing.Point(369, 178);
+            providerRegisterStateLabel.Name = "providerRegisterStateLabel";
+            providerRegisterStateLabel.Size = new System.Drawing.Size(35, 13);
+            providerRegisterStateLabel.TabIndex = 11;
+            providerRegisterStateLabel.Text = "State:";
+            // 
+            // providerRegisterPostalCodeLabel
+            // 
+            providerRegisterPostalCodeLabel.AutoSize = true;
+            providerRegisterPostalCodeLabel.Location = new System.Drawing.Point(48, 178);
+            providerRegisterPostalCodeLabel.Name = "providerRegisterPostalCodeLabel";
+            providerRegisterPostalCodeLabel.Size = new System.Drawing.Size(67, 13);
+            providerRegisterPostalCodeLabel.TabIndex = 13;
+            providerRegisterPostalCodeLabel.Text = "Postal Code:";
+            // 
+            // providerRegisterPhoneLabel
+            // 
+            providerRegisterPhoneLabel.AutoSize = true;
+            providerRegisterPhoneLabel.Location = new System.Drawing.Point(371, 229);
+            providerRegisterPhoneLabel.Name = "providerRegisterPhoneLabel";
+            providerRegisterPhoneLabel.Size = new System.Drawing.Size(41, 13);
+            providerRegisterPhoneLabel.TabIndex = 15;
+            providerRegisterPhoneLabel.Text = "Phone:";
+            // 
+            // providerRegisterEmailLabel
+            // 
+            providerRegisterEmailLabel.AutoSize = true;
+            providerRegisterEmailLabel.Location = new System.Drawing.Point(49, 229);
+            providerRegisterEmailLabel.Name = "providerRegisterEmailLabel";
+            providerRegisterEmailLabel.Size = new System.Drawing.Size(38, 13);
+            providerRegisterEmailLabel.TabIndex = 17;
+            providerRegisterEmailLabel.Text = "E-mail:";
+            // 
+            // providerRegisterTypeLabel
+            // 
+            providerRegisterTypeLabel.AutoSize = true;
+            providerRegisterTypeLabel.Location = new System.Drawing.Point(48, 279);
+            providerRegisterTypeLabel.Name = "providerRegisterTypeLabel";
+            providerRegisterTypeLabel.Size = new System.Drawing.Size(34, 13);
+            providerRegisterTypeLabel.TabIndex = 19;
+            providerRegisterTypeLabel.Text = "Type:";
+            // 
+            // providerRegisterCPFLabel
+            // 
+            providerRegisterCPFLabel.AutoSize = true;
+            providerRegisterCPFLabel.Location = new System.Drawing.Point(238, 328);
+            providerRegisterCPFLabel.Name = "providerRegisterCPFLabel";
+            providerRegisterCPFLabel.Size = new System.Drawing.Size(30, 13);
+            providerRegisterCPFLabel.TabIndex = 21;
+            providerRegisterCPFLabel.Text = "CPF:";
+            // 
+            // providerRegisterCNPJLabel
+            // 
+            providerRegisterCNPJLabel.AutoSize = true;
+            providerRegisterCNPJLabel.Location = new System.Drawing.Point(48, 328);
+            providerRegisterCNPJLabel.Name = "providerRegisterCNPJLabel";
+            providerRegisterCNPJLabel.Size = new System.Drawing.Size(145, 13);
+            providerRegisterCNPJLabel.TabIndex = 23;
+            providerRegisterCNPJLabel.Text = "CNPJ (If it\'s a Juridic Person):";
+            // 
+            // providerRegisterRGLabel
+            // 
+            providerRegisterRGLabel.AutoSize = true;
+            providerRegisterRGLabel.Location = new System.Drawing.Point(426, 328);
+            providerRegisterRGLabel.Name = "providerRegisterRGLabel";
+            providerRegisterRGLabel.Size = new System.Drawing.Size(26, 13);
+            providerRegisterRGLabel.TabIndex = 25;
+            providerRegisterRGLabel.Text = "RG:";
+            // 
+            // providerRegisterStateSubscriptionLabel
+            // 
+            providerRegisterStateSubscriptionLabel.AutoSize = true;
+            providerRegisterStateSubscriptionLabel.Location = new System.Drawing.Point(217, 178);
+            providerRegisterStateSubscriptionLabel.Name = "providerRegisterStateSubscriptionLabel";
+            providerRegisterStateSubscriptionLabel.Size = new System.Drawing.Size(96, 13);
+            providerRegisterStateSubscriptionLabel.TabIndex = 27;
+            providerRegisterStateSubscriptionLabel.Text = "State Subscription:";
             // 
             // financialDataSet
             // 
@@ -151,9 +277,34 @@
             this.providerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.providerBindingNavigator.Name = "providerBindingNavigator";
             this.providerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.providerBindingNavigator.Size = new System.Drawing.Size(1101, 25);
+            this.providerBindingNavigator.Size = new System.Drawing.Size(1100, 25);
             this.providerBindingNavigator.TabIndex = 0;
             this.providerBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -187,16 +338,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -219,26 +363,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
             // providerBindingNavigatorSaveItem
             // 
@@ -249,15 +375,6 @@
             this.providerBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.providerBindingNavigatorSaveItem.Click += new System.EventHandler(this.providerBindingNavigatorSaveItem_Click);
             // 
-            // providerRegisterCodeLabel
-            // 
-            providerRegisterCodeLabel.AutoSize = true;
-            providerRegisterCodeLabel.Location = new System.Drawing.Point(48, 34);
-            providerRegisterCodeLabel.Name = "providerRegisterCodeLabel";
-            providerRegisterCodeLabel.Size = new System.Drawing.Size(35, 13);
-            providerRegisterCodeLabel.TabIndex = 1;
-            providerRegisterCodeLabel.Text = "Code:";
-            // 
             // providerRegisterCodeText
             // 
             this.providerRegisterCodeText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "id", true));
@@ -265,15 +382,6 @@
             this.providerRegisterCodeText.Name = "providerRegisterCodeText";
             this.providerRegisterCodeText.Size = new System.Drawing.Size(46, 20);
             this.providerRegisterCodeText.TabIndex = 2;
-            // 
-            // providerRegisterNameLabel
-            // 
-            providerRegisterNameLabel.AutoSize = true;
-            providerRegisterNameLabel.Location = new System.Drawing.Point(48, 86);
-            providerRegisterNameLabel.Name = "providerRegisterNameLabel";
-            providerRegisterNameLabel.Size = new System.Drawing.Size(38, 13);
-            providerRegisterNameLabel.TabIndex = 3;
-            providerRegisterNameLabel.Text = "Name:";
             // 
             // providerRegisterNameText
             // 
@@ -283,15 +391,6 @@
             this.providerRegisterNameText.Size = new System.Drawing.Size(429, 20);
             this.providerRegisterNameText.TabIndex = 4;
             // 
-            // providerRegisterAddressLabel
-            // 
-            providerRegisterAddressLabel.AutoSize = true;
-            providerRegisterAddressLabel.Location = new System.Drawing.Point(49, 133);
-            providerRegisterAddressLabel.Name = "providerRegisterAddressLabel";
-            providerRegisterAddressLabel.Size = new System.Drawing.Size(48, 13);
-            providerRegisterAddressLabel.TabIndex = 5;
-            providerRegisterAddressLabel.Text = "Address:";
-            // 
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "address", true));
@@ -299,15 +398,6 @@
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(260, 20);
             this.addressTextBox.TabIndex = 6;
-            // 
-            // providerRegisterCityLabel
-            // 
-            providerRegisterCityLabel.AutoSize = true;
-            providerRegisterCityLabel.Location = new System.Drawing.Point(502, 133);
-            providerRegisterCityLabel.Name = "providerRegisterCityLabel";
-            providerRegisterCityLabel.Size = new System.Drawing.Size(27, 13);
-            providerRegisterCityLabel.TabIndex = 7;
-            providerRegisterCityLabel.Text = "City:";
             // 
             // cityTextBox
             // 
@@ -317,15 +407,6 @@
             this.cityTextBox.Size = new System.Drawing.Size(100, 20);
             this.cityTextBox.TabIndex = 8;
             // 
-            // providerRegisterNeighborhoodLabel
-            // 
-            providerRegisterNeighborhoodLabel.AutoSize = true;
-            providerRegisterNeighborhoodLabel.Location = new System.Drawing.Point(334, 133);
-            providerRegisterNeighborhoodLabel.Name = "providerRegisterNeighborhoodLabel";
-            providerRegisterNeighborhoodLabel.Size = new System.Drawing.Size(77, 13);
-            providerRegisterNeighborhoodLabel.TabIndex = 9;
-            providerRegisterNeighborhoodLabel.Text = "Neighborhood:";
-            // 
             // providerRegisterNeighborhoodText
             // 
             this.providerRegisterNeighborhoodText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "neighborhood", true));
@@ -333,15 +414,6 @@
             this.providerRegisterNeighborhoodText.Name = "providerRegisterNeighborhoodText";
             this.providerRegisterNeighborhoodText.Size = new System.Drawing.Size(143, 20);
             this.providerRegisterNeighborhoodText.TabIndex = 10;
-            // 
-            // providerRegisterStateLabel
-            // 
-            providerRegisterStateLabel.AutoSize = true;
-            providerRegisterStateLabel.Location = new System.Drawing.Point(369, 178);
-            providerRegisterStateLabel.Name = "providerRegisterStateLabel";
-            providerRegisterStateLabel.Size = new System.Drawing.Size(35, 13);
-            providerRegisterStateLabel.TabIndex = 11;
-            providerRegisterStateLabel.Text = "State:";
             // 
             // stateTextBox
             // 
@@ -351,15 +423,6 @@
             this.stateTextBox.Size = new System.Drawing.Size(108, 20);
             this.stateTextBox.TabIndex = 12;
             // 
-            // providerRegisterPostalCodeLabel
-            // 
-            providerRegisterPostalCodeLabel.AutoSize = true;
-            providerRegisterPostalCodeLabel.Location = new System.Drawing.Point(48, 178);
-            providerRegisterPostalCodeLabel.Name = "providerRegisterPostalCodeLabel";
-            providerRegisterPostalCodeLabel.Size = new System.Drawing.Size(67, 13);
-            providerRegisterPostalCodeLabel.TabIndex = 13;
-            providerRegisterPostalCodeLabel.Text = "Postal Code:";
-            // 
             // providerRegisterPostalCodeText
             // 
             this.providerRegisterPostalCodeText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "postalCode", true));
@@ -367,15 +430,6 @@
             this.providerRegisterPostalCodeText.Name = "providerRegisterPostalCodeText";
             this.providerRegisterPostalCodeText.Size = new System.Drawing.Size(147, 20);
             this.providerRegisterPostalCodeText.TabIndex = 14;
-            // 
-            // providerRegisterPhoneLabel
-            // 
-            providerRegisterPhoneLabel.AutoSize = true;
-            providerRegisterPhoneLabel.Location = new System.Drawing.Point(371, 229);
-            providerRegisterPhoneLabel.Name = "providerRegisterPhoneLabel";
-            providerRegisterPhoneLabel.Size = new System.Drawing.Size(41, 13);
-            providerRegisterPhoneLabel.TabIndex = 15;
-            providerRegisterPhoneLabel.Text = "Phone:";
             // 
             // providerRegisterPhoneText
             // 
@@ -385,15 +439,6 @@
             this.providerRegisterPhoneText.Size = new System.Drawing.Size(108, 20);
             this.providerRegisterPhoneText.TabIndex = 16;
             // 
-            // providerRegisterEmailLabel
-            // 
-            providerRegisterEmailLabel.AutoSize = true;
-            providerRegisterEmailLabel.Location = new System.Drawing.Point(49, 229);
-            providerRegisterEmailLabel.Name = "providerRegisterEmailLabel";
-            providerRegisterEmailLabel.Size = new System.Drawing.Size(38, 13);
-            providerRegisterEmailLabel.TabIndex = 17;
-            providerRegisterEmailLabel.Text = "E-mail:";
-            // 
             // providerRegisterEmailText
             // 
             this.providerRegisterEmailText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "email", true));
@@ -401,15 +446,6 @@
             this.providerRegisterEmailText.Name = "providerRegisterEmailText";
             this.providerRegisterEmailText.Size = new System.Drawing.Size(294, 20);
             this.providerRegisterEmailText.TabIndex = 18;
-            // 
-            // providerRegisterTypeLabel
-            // 
-            providerRegisterTypeLabel.AutoSize = true;
-            providerRegisterTypeLabel.Location = new System.Drawing.Point(48, 279);
-            providerRegisterTypeLabel.Name = "providerRegisterTypeLabel";
-            providerRegisterTypeLabel.Size = new System.Drawing.Size(34, 13);
-            providerRegisterTypeLabel.TabIndex = 19;
-            providerRegisterTypeLabel.Text = "Type:";
             // 
             // typeTextBox
             // 
@@ -419,15 +455,6 @@
             this.typeTextBox.Size = new System.Drawing.Size(31, 20);
             this.typeTextBox.TabIndex = 20;
             // 
-            // providerRegisterCPFLabel
-            // 
-            providerRegisterCPFLabel.AutoSize = true;
-            providerRegisterCPFLabel.Location = new System.Drawing.Point(238, 328);
-            providerRegisterCPFLabel.Name = "providerRegisterCPFLabel";
-            providerRegisterCPFLabel.Size = new System.Drawing.Size(30, 13);
-            providerRegisterCPFLabel.TabIndex = 21;
-            providerRegisterCPFLabel.Text = "CPF:";
-            // 
             // providerRegisterCPFText
             // 
             this.providerRegisterCPFText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "cpf", true));
@@ -435,15 +462,6 @@
             this.providerRegisterCPFText.Name = "providerRegisterCPFText";
             this.providerRegisterCPFText.Size = new System.Drawing.Size(163, 20);
             this.providerRegisterCPFText.TabIndex = 22;
-            // 
-            // providerRegisterCNPJLabel
-            // 
-            providerRegisterCNPJLabel.AutoSize = true;
-            providerRegisterCNPJLabel.Location = new System.Drawing.Point(48, 328);
-            providerRegisterCNPJLabel.Name = "providerRegisterCNPJLabel";
-            providerRegisterCNPJLabel.Size = new System.Drawing.Size(145, 13);
-            providerRegisterCNPJLabel.TabIndex = 23;
-            providerRegisterCNPJLabel.Text = "CNPJ (If it\'s a Juridic Person):";
             // 
             // cnpjTextBox
             // 
@@ -453,15 +471,6 @@
             this.cnpjTextBox.Size = new System.Drawing.Size(158, 20);
             this.cnpjTextBox.TabIndex = 24;
             // 
-            // providerRegisterRGLabel
-            // 
-            providerRegisterRGLabel.AutoSize = true;
-            providerRegisterRGLabel.Location = new System.Drawing.Point(426, 328);
-            providerRegisterRGLabel.Name = "providerRegisterRGLabel";
-            providerRegisterRGLabel.Size = new System.Drawing.Size(26, 13);
-            providerRegisterRGLabel.TabIndex = 25;
-            providerRegisterRGLabel.Text = "RG:";
-            // 
             // providerRegisterRGText
             // 
             this.providerRegisterRGText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.providerBindingSource, "rg", true));
@@ -469,15 +478,6 @@
             this.providerRegisterRGText.Name = "providerRegisterRGText";
             this.providerRegisterRGText.Size = new System.Drawing.Size(176, 20);
             this.providerRegisterRGText.TabIndex = 26;
-            // 
-            // providerRegisterStateSubscriptionLabel
-            // 
-            providerRegisterStateSubscriptionLabel.AutoSize = true;
-            providerRegisterStateSubscriptionLabel.Location = new System.Drawing.Point(217, 178);
-            providerRegisterStateSubscriptionLabel.Name = "providerRegisterStateSubscriptionLabel";
-            providerRegisterStateSubscriptionLabel.Size = new System.Drawing.Size(96, 13);
-            providerRegisterStateSubscriptionLabel.TabIndex = 27;
-            providerRegisterStateSubscriptionLabel.Text = "State Subscription:";
             // 
             // providerRegisterStateSubscriptionText
             // 
@@ -532,15 +532,15 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(917, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 32);
+            this.label1.Size = new System.Drawing.Size(179, 32);
             this.label1.TabIndex = 33;
-            this.label1.Text = "Searching for:";
+            this.label1.Text = "Procurando por:";
             // 
             // ProviderRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 497);
+            this.ClientSize = new System.Drawing.Size(1100, 497);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.providerRegisterNextButton);
