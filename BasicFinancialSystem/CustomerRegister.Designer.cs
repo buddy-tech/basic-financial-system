@@ -35,9 +35,9 @@
             System.Windows.Forms.Label customerRegisterCityLabel;
             System.Windows.Forms.Label customerRegisterNeighborhoodLabel;
             System.Windows.Forms.Label customerRegisterStateLabel;
-            System.Windows.Forms.Label postalCodeLabel;
-            System.Windows.Forms.Label phoneLabel;
-            System.Windows.Forms.Label emailLabel;
+            System.Windows.Forms.Label customerRegisterPostalCodeLabel;
+            System.Windows.Forms.Label customerRegisterPhoneLabel;
+            System.Windows.Forms.Label customerRegisterEmailLabel;
             System.Windows.Forms.Label typeLabel;
             System.Windows.Forms.Label cpfLabel;
             System.Windows.Forms.Label cnpjLabel;
@@ -67,8 +67,8 @@
             this.customerRegisterCityText = new System.Windows.Forms.TextBox();
             this.customerRegisterNeighborhoodText = new System.Windows.Forms.TextBox();
             this.customerRegisterStateText = new System.Windows.Forms.TextBox();
-            this.postalCodeTextBox = new System.Windows.Forms.TextBox();
-            this.phoneTextBox = new System.Windows.Forms.TextBox();
+            this.customerRegisterPostalCodeText = new System.Windows.Forms.TextBox();
+            this.customerRegisterPhoneText = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.typeTextBox = new System.Windows.Forms.TextBox();
             this.cpfTextBox = new System.Windows.Forms.TextBox();
@@ -81,9 +81,9 @@
             customerRegisterCityLabel = new System.Windows.Forms.Label();
             customerRegisterNeighborhoodLabel = new System.Windows.Forms.Label();
             customerRegisterStateLabel = new System.Windows.Forms.Label();
-            postalCodeLabel = new System.Windows.Forms.Label();
-            phoneLabel = new System.Windows.Forms.Label();
-            emailLabel = new System.Windows.Forms.Label();
+            customerRegisterPostalCodeLabel = new System.Windows.Forms.Label();
+            customerRegisterPhoneLabel = new System.Windows.Forms.Label();
+            customerRegisterEmailLabel = new System.Windows.Forms.Label();
             typeLabel = new System.Windows.Forms.Label();
             cpfLabel = new System.Windows.Forms.Label();
             cnpjLabel = new System.Windows.Forms.Label();
@@ -149,37 +149,37 @@
             customerRegisterStateLabel.TabIndex = 11;
             customerRegisterStateLabel.Text = "State:";
             // 
-            // postalCodeLabel
+            // customerRegisterPostalCodeLabel
             // 
-            postalCodeLabel.AutoSize = true;
-            postalCodeLabel.Location = new System.Drawing.Point(345, 264);
-            postalCodeLabel.Name = "postalCodeLabel";
-            postalCodeLabel.Size = new System.Drawing.Size(66, 13);
-            postalCodeLabel.TabIndex = 13;
-            postalCodeLabel.Text = "postal Code:";
+            customerRegisterPostalCodeLabel.AutoSize = true;
+            customerRegisterPostalCodeLabel.Location = new System.Drawing.Point(36, 268);
+            customerRegisterPostalCodeLabel.Name = "customerRegisterPostalCodeLabel";
+            customerRegisterPostalCodeLabel.Size = new System.Drawing.Size(67, 13);
+            customerRegisterPostalCodeLabel.TabIndex = 13;
+            customerRegisterPostalCodeLabel.Text = "Postal Code:";
             // 
-            // phoneLabel
+            // customerRegisterPhoneLabel
             // 
-            phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(345, 290);
-            phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(40, 13);
-            phoneLabel.TabIndex = 15;
-            phoneLabel.Text = "phone:";
+            customerRegisterPhoneLabel.AutoSize = true;
+            customerRegisterPhoneLabel.Location = new System.Drawing.Point(36, 320);
+            customerRegisterPhoneLabel.Name = "customerRegisterPhoneLabel";
+            customerRegisterPhoneLabel.Size = new System.Drawing.Size(41, 13);
+            customerRegisterPhoneLabel.TabIndex = 15;
+            customerRegisterPhoneLabel.Text = "Phone:";
             // 
-            // emailLabel
+            // customerRegisterEmailLabel
             // 
-            emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(345, 316);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(34, 13);
-            emailLabel.TabIndex = 17;
-            emailLabel.Text = "email:";
+            customerRegisterEmailLabel.AutoSize = true;
+            customerRegisterEmailLabel.Location = new System.Drawing.Point(224, 320);
+            customerRegisterEmailLabel.Name = "customerRegisterEmailLabel";
+            customerRegisterEmailLabel.Size = new System.Drawing.Size(38, 13);
+            customerRegisterEmailLabel.TabIndex = 17;
+            customerRegisterEmailLabel.Text = "E-mail:";
             // 
             // typeLabel
             // 
             typeLabel.AutoSize = true;
-            typeLabel.Location = new System.Drawing.Point(345, 342);
+            typeLabel.Location = new System.Drawing.Point(348, 380);
             typeLabel.Name = "typeLabel";
             typeLabel.Size = new System.Drawing.Size(30, 13);
             typeLabel.TabIndex = 19;
@@ -188,7 +188,7 @@
             // cpfLabel
             // 
             cpfLabel.AutoSize = true;
-            cpfLabel.Location = new System.Drawing.Point(345, 368);
+            cpfLabel.Location = new System.Drawing.Point(348, 406);
             cpfLabel.Name = "cpfLabel";
             cpfLabel.Size = new System.Drawing.Size(25, 13);
             cpfLabel.TabIndex = 21;
@@ -197,7 +197,7 @@
             // cnpjLabel
             // 
             cnpjLabel.AutoSize = true;
-            cnpjLabel.Location = new System.Drawing.Point(345, 394);
+            cnpjLabel.Location = new System.Drawing.Point(348, 432);
             cnpjLabel.Name = "cnpjLabel";
             cnpjLabel.Size = new System.Drawing.Size(30, 13);
             cnpjLabel.TabIndex = 23;
@@ -206,7 +206,7 @@
             // rgLabel
             // 
             rgLabel.AutoSize = true;
-            rgLabel.Location = new System.Drawing.Point(345, 420);
+            rgLabel.Location = new System.Drawing.Point(348, 458);
             rgLabel.Name = "rgLabel";
             rgLabel.Size = new System.Drawing.Size(19, 13);
             rgLabel.TabIndex = 25;
@@ -215,7 +215,7 @@
             // stateSubscriptionLabel
             // 
             stateSubscriptionLabel.AutoSize = true;
-            stateSubscriptionLabel.Location = new System.Drawing.Point(345, 446);
+            stateSubscriptionLabel.Location = new System.Drawing.Point(348, 484);
             stateSubscriptionLabel.Name = "stateSubscriptionLabel";
             stateSubscriptionLabel.Size = new System.Drawing.Size(94, 13);
             stateSubscriptionLabel.TabIndex = 27;
@@ -417,34 +417,34 @@
             this.customerRegisterStateText.Size = new System.Drawing.Size(191, 20);
             this.customerRegisterStateText.TabIndex = 12;
             // 
-            // postalCodeTextBox
+            // customerRegisterPostalCodeText
             // 
-            this.postalCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "postalCode", true));
-            this.postalCodeTextBox.Location = new System.Drawing.Point(445, 261);
-            this.postalCodeTextBox.Name = "postalCodeTextBox";
-            this.postalCodeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.postalCodeTextBox.TabIndex = 14;
+            this.customerRegisterPostalCodeText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "postalCode", true));
+            this.customerRegisterPostalCodeText.Location = new System.Drawing.Point(39, 287);
+            this.customerRegisterPostalCodeText.Name = "customerRegisterPostalCodeText";
+            this.customerRegisterPostalCodeText.Size = new System.Drawing.Size(234, 20);
+            this.customerRegisterPostalCodeText.TabIndex = 14;
             // 
-            // phoneTextBox
+            // customerRegisterPhoneText
             // 
-            this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(445, 287);
-            this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(100, 20);
-            this.phoneTextBox.TabIndex = 16;
+            this.customerRegisterPhoneText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "phone", true));
+            this.customerRegisterPhoneText.Location = new System.Drawing.Point(39, 342);
+            this.customerRegisterPhoneText.Name = "customerRegisterPhoneText";
+            this.customerRegisterPhoneText.Size = new System.Drawing.Size(166, 20);
+            this.customerRegisterPhoneText.TabIndex = 16;
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(445, 313);
+            this.emailTextBox.Location = new System.Drawing.Point(227, 339);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.emailTextBox.Size = new System.Drawing.Size(261, 20);
             this.emailTextBox.TabIndex = 18;
             // 
             // typeTextBox
             // 
             this.typeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "type", true));
-            this.typeTextBox.Location = new System.Drawing.Point(445, 339);
+            this.typeTextBox.Location = new System.Drawing.Point(448, 377);
             this.typeTextBox.Name = "typeTextBox";
             this.typeTextBox.Size = new System.Drawing.Size(100, 20);
             this.typeTextBox.TabIndex = 20;
@@ -452,7 +452,7 @@
             // cpfTextBox
             // 
             this.cpfTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "cpf", true));
-            this.cpfTextBox.Location = new System.Drawing.Point(445, 365);
+            this.cpfTextBox.Location = new System.Drawing.Point(448, 403);
             this.cpfTextBox.Name = "cpfTextBox";
             this.cpfTextBox.Size = new System.Drawing.Size(100, 20);
             this.cpfTextBox.TabIndex = 22;
@@ -460,7 +460,7 @@
             // cnpjTextBox
             // 
             this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "cnpj", true));
-            this.cnpjTextBox.Location = new System.Drawing.Point(445, 391);
+            this.cnpjTextBox.Location = new System.Drawing.Point(448, 429);
             this.cnpjTextBox.Name = "cnpjTextBox";
             this.cnpjTextBox.Size = new System.Drawing.Size(100, 20);
             this.cnpjTextBox.TabIndex = 24;
@@ -468,7 +468,7 @@
             // rgTextBox
             // 
             this.rgTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "rg", true));
-            this.rgTextBox.Location = new System.Drawing.Point(445, 417);
+            this.rgTextBox.Location = new System.Drawing.Point(448, 455);
             this.rgTextBox.Name = "rgTextBox";
             this.rgTextBox.Size = new System.Drawing.Size(100, 20);
             this.rgTextBox.TabIndex = 26;
@@ -476,7 +476,7 @@
             // stateSubscriptionTextBox
             // 
             this.stateSubscriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "stateSubscription", true));
-            this.stateSubscriptionTextBox.Location = new System.Drawing.Point(445, 443);
+            this.stateSubscriptionTextBox.Location = new System.Drawing.Point(448, 481);
             this.stateSubscriptionTextBox.Name = "stateSubscriptionTextBox";
             this.stateSubscriptionTextBox.Size = new System.Drawing.Size(100, 20);
             this.stateSubscriptionTextBox.TabIndex = 28;
@@ -485,7 +485,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 483);
+            this.ClientSize = new System.Drawing.Size(800, 528);
             this.Controls.Add(customerRegisterCodeLabel);
             this.Controls.Add(this.customerRegisterCodeText);
             this.Controls.Add(customerRegisterNameLabel);
@@ -498,11 +498,11 @@
             this.Controls.Add(this.customerRegisterNeighborhoodText);
             this.Controls.Add(customerRegisterStateLabel);
             this.Controls.Add(this.customerRegisterStateText);
-            this.Controls.Add(postalCodeLabel);
-            this.Controls.Add(this.postalCodeTextBox);
-            this.Controls.Add(phoneLabel);
-            this.Controls.Add(this.phoneTextBox);
-            this.Controls.Add(emailLabel);
+            this.Controls.Add(customerRegisterPostalCodeLabel);
+            this.Controls.Add(this.customerRegisterPostalCodeText);
+            this.Controls.Add(customerRegisterPhoneLabel);
+            this.Controls.Add(this.customerRegisterPhoneText);
+            this.Controls.Add(customerRegisterEmailLabel);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(typeLabel);
             this.Controls.Add(this.typeTextBox);
@@ -553,8 +553,8 @@
         private System.Windows.Forms.TextBox customerRegisterCityText;
         private System.Windows.Forms.TextBox customerRegisterNeighborhoodText;
         private System.Windows.Forms.TextBox customerRegisterStateText;
-        private System.Windows.Forms.TextBox postalCodeTextBox;
-        private System.Windows.Forms.TextBox phoneTextBox;
+        private System.Windows.Forms.TextBox customerRegisterPostalCodeText;
+        private System.Windows.Forms.TextBox customerRegisterPhoneText;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox typeTextBox;
         private System.Windows.Forms.TextBox cpfTextBox;
