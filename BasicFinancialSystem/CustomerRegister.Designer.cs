@@ -75,6 +75,11 @@
             this.customerRegisterCNPJText = new System.Windows.Forms.TextBox();
             this.customerRegisterRGText = new System.Windows.Forms.TextBox();
             this.customerRegisterStateSubscriptionText = new System.Windows.Forms.TextBox();
+            this.customerRegisterPreviousButton = new System.Windows.Forms.Button();
+            this.customerRegisterNextButton = new System.Windows.Forms.Button();
+            this.customerRegisterEditButton = new System.Windows.Forms.Button();
+            this.customerRegisterNewButton = new System.Windows.Forms.Button();
+            this.customerRegisterSaveButton = new System.Windows.Forms.Button();
             customerRegisterCodeLabel = new System.Windows.Forms.Label();
             customerRegisterNameLabel = new System.Windows.Forms.Label();
             customerRegisterAddressLabel = new System.Windows.Forms.Label();
@@ -481,11 +486,61 @@
             this.customerRegisterStateSubscriptionText.Size = new System.Drawing.Size(166, 20);
             this.customerRegisterStateSubscriptionText.TabIndex = 28;
             // 
+            // customerRegisterPreviousButton
+            // 
+            this.customerRegisterPreviousButton.Location = new System.Drawing.Point(39, 501);
+            this.customerRegisterPreviousButton.Name = "customerRegisterPreviousButton";
+            this.customerRegisterPreviousButton.Size = new System.Drawing.Size(75, 23);
+            this.customerRegisterPreviousButton.TabIndex = 29;
+            this.customerRegisterPreviousButton.Text = "Previous";
+            this.customerRegisterPreviousButton.UseVisualStyleBackColor = true;
+            // 
+            // customerRegisterNextButton
+            // 
+            this.customerRegisterNextButton.Location = new System.Drawing.Point(132, 501);
+            this.customerRegisterNextButton.Name = "customerRegisterNextButton";
+            this.customerRegisterNextButton.Size = new System.Drawing.Size(75, 23);
+            this.customerRegisterNextButton.TabIndex = 30;
+            this.customerRegisterNextButton.Text = "Next";
+            this.customerRegisterNextButton.UseVisualStyleBackColor = true;
+            // 
+            // customerRegisterEditButton
+            // 
+            this.customerRegisterEditButton.Location = new System.Drawing.Point(227, 501);
+            this.customerRegisterEditButton.Name = "customerRegisterEditButton";
+            this.customerRegisterEditButton.Size = new System.Drawing.Size(75, 23);
+            this.customerRegisterEditButton.TabIndex = 31;
+            this.customerRegisterEditButton.Text = "Edit";
+            this.customerRegisterEditButton.UseVisualStyleBackColor = true;
+            // 
+            // customerRegisterNewButton
+            // 
+            this.customerRegisterNewButton.Location = new System.Drawing.Point(322, 501);
+            this.customerRegisterNewButton.Name = "customerRegisterNewButton";
+            this.customerRegisterNewButton.Size = new System.Drawing.Size(75, 23);
+            this.customerRegisterNewButton.TabIndex = 32;
+            this.customerRegisterNewButton.Text = "New";
+            this.customerRegisterNewButton.UseVisualStyleBackColor = true;
+            // 
+            // customerRegisterSaveButton
+            // 
+            this.customerRegisterSaveButton.Location = new System.Drawing.Point(39, 540);
+            this.customerRegisterSaveButton.Name = "customerRegisterSaveButton";
+            this.customerRegisterSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.customerRegisterSaveButton.TabIndex = 33;
+            this.customerRegisterSaveButton.Text = "Save";
+            this.customerRegisterSaveButton.UseVisualStyleBackColor = true;
+            // 
             // CustomerRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 528);
+            this.ClientSize = new System.Drawing.Size(800, 616);
+            this.Controls.Add(this.customerRegisterSaveButton);
+            this.Controls.Add(this.customerRegisterNewButton);
+            this.Controls.Add(this.customerRegisterEditButton);
+            this.Controls.Add(this.customerRegisterNextButton);
+            this.Controls.Add(this.customerRegisterPreviousButton);
             this.Controls.Add(customerRegisterCodeLabel);
             this.Controls.Add(this.customerRegisterCodeText);
             this.Controls.Add(customerRegisterNameLabel);
@@ -561,5 +616,10 @@
         private System.Windows.Forms.TextBox customerRegisterCNPJText;
         private System.Windows.Forms.TextBox customerRegisterRGText;
         private System.Windows.Forms.TextBox customerRegisterStateSubscriptionText;
+        private System.Windows.Forms.Button customerRegisterPreviousButton;
+        private System.Windows.Forms.Button customerRegisterNextButton;
+        private System.Windows.Forms.Button customerRegisterEditButton;
+        private System.Windows.Forms.Button customerRegisterNewButton;
+        private System.Windows.Forms.Button customerRegisterSaveButton;
     }
 }
