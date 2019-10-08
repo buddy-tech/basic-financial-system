@@ -40,9 +40,9 @@
             System.Windows.Forms.Label customerRegisterEmailLabel;
             System.Windows.Forms.Label customerRegisterTypeLabel;
             System.Windows.Forms.Label customerRegisterCPFLabel;
-            System.Windows.Forms.Label cnpjLabel;
-            System.Windows.Forms.Label rgLabel;
-            System.Windows.Forms.Label stateSubscriptionLabel;
+            System.Windows.Forms.Label customerRegisterCNPJLabel;
+            System.Windows.Forms.Label customerRegisterRGLabel;
+            System.Windows.Forms.Label customerRegisterStateSubscriptionLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerRegister));
             this.financialDataSet = new BasicFinancialSystem.FinancialDataSet();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -72,9 +72,9 @@
             this.customerRegisterEmailText = new System.Windows.Forms.TextBox();
             this.typeTextBox = new System.Windows.Forms.TextBox();
             this.customerRegisterCPFText = new System.Windows.Forms.TextBox();
-            this.cnpjTextBox = new System.Windows.Forms.TextBox();
-            this.rgTextBox = new System.Windows.Forms.TextBox();
-            this.stateSubscriptionTextBox = new System.Windows.Forms.TextBox();
+            this.customerRegisterCNPJText = new System.Windows.Forms.TextBox();
+            this.customerRegisterRGText = new System.Windows.Forms.TextBox();
+            this.customerRegisterStateSubscriptionText = new System.Windows.Forms.TextBox();
             customerRegisterCodeLabel = new System.Windows.Forms.Label();
             customerRegisterNameLabel = new System.Windows.Forms.Label();
             customerRegisterAddressLabel = new System.Windows.Forms.Label();
@@ -86,9 +86,9 @@
             customerRegisterEmailLabel = new System.Windows.Forms.Label();
             customerRegisterTypeLabel = new System.Windows.Forms.Label();
             customerRegisterCPFLabel = new System.Windows.Forms.Label();
-            cnpjLabel = new System.Windows.Forms.Label();
-            rgLabel = new System.Windows.Forms.Label();
-            stateSubscriptionLabel = new System.Windows.Forms.Label();
+            customerRegisterCNPJLabel = new System.Windows.Forms.Label();
+            customerRegisterRGLabel = new System.Windows.Forms.Label();
+            customerRegisterStateSubscriptionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).BeginInit();
@@ -194,32 +194,32 @@
             customerRegisterCPFLabel.TabIndex = 21;
             customerRegisterCPFLabel.Text = "CPF:";
             // 
-            // cnpjLabel
+            // customerRegisterCNPJLabel
             // 
-            cnpjLabel.AutoSize = true;
-            cnpjLabel.Location = new System.Drawing.Point(224, 377);
-            cnpjLabel.Name = "cnpjLabel";
-            cnpjLabel.Size = new System.Drawing.Size(30, 13);
-            cnpjLabel.TabIndex = 23;
-            cnpjLabel.Text = "cnpj:";
+            customerRegisterCNPJLabel.AutoSize = true;
+            customerRegisterCNPJLabel.Location = new System.Drawing.Point(224, 377);
+            customerRegisterCNPJLabel.Name = "customerRegisterCNPJLabel";
+            customerRegisterCNPJLabel.Size = new System.Drawing.Size(37, 13);
+            customerRegisterCNPJLabel.TabIndex = 23;
+            customerRegisterCNPJLabel.Text = "CNPJ:";
             // 
-            // rgLabel
+            // customerRegisterRGLabel
             // 
-            rgLabel.AutoSize = true;
-            rgLabel.Location = new System.Drawing.Point(372, 377);
-            rgLabel.Name = "rgLabel";
-            rgLabel.Size = new System.Drawing.Size(19, 13);
-            rgLabel.TabIndex = 25;
-            rgLabel.Text = "rg:";
+            customerRegisterRGLabel.AutoSize = true;
+            customerRegisterRGLabel.Location = new System.Drawing.Point(372, 377);
+            customerRegisterRGLabel.Name = "customerRegisterRGLabel";
+            customerRegisterRGLabel.Size = new System.Drawing.Size(26, 13);
+            customerRegisterRGLabel.TabIndex = 25;
+            customerRegisterRGLabel.Text = "RG:";
             // 
-            // stateSubscriptionLabel
+            // customerRegisterStateSubscriptionLabel
             // 
-            stateSubscriptionLabel.AutoSize = true;
-            stateSubscriptionLabel.Location = new System.Drawing.Point(36, 435);
-            stateSubscriptionLabel.Name = "stateSubscriptionLabel";
-            stateSubscriptionLabel.Size = new System.Drawing.Size(94, 13);
-            stateSubscriptionLabel.TabIndex = 27;
-            stateSubscriptionLabel.Text = "state Subscription:";
+            customerRegisterStateSubscriptionLabel.AutoSize = true;
+            customerRegisterStateSubscriptionLabel.Location = new System.Drawing.Point(36, 435);
+            customerRegisterStateSubscriptionLabel.Name = "customerRegisterStateSubscriptionLabel";
+            customerRegisterStateSubscriptionLabel.Size = new System.Drawing.Size(96, 13);
+            customerRegisterStateSubscriptionLabel.TabIndex = 27;
+            customerRegisterStateSubscriptionLabel.Text = "State Subscription:";
             // 
             // financialDataSet
             // 
@@ -457,29 +457,29 @@
             this.customerRegisterCPFText.Size = new System.Drawing.Size(114, 20);
             this.customerRegisterCPFText.TabIndex = 22;
             // 
-            // cnpjTextBox
+            // customerRegisterCNPJText
             // 
-            this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "cnpj", true));
-            this.cnpjTextBox.Location = new System.Drawing.Point(227, 399);
-            this.cnpjTextBox.Name = "cnpjTextBox";
-            this.cnpjTextBox.Size = new System.Drawing.Size(129, 20);
-            this.cnpjTextBox.TabIndex = 24;
+            this.customerRegisterCNPJText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "cnpj", true));
+            this.customerRegisterCNPJText.Location = new System.Drawing.Point(227, 399);
+            this.customerRegisterCNPJText.Name = "customerRegisterCNPJText";
+            this.customerRegisterCNPJText.Size = new System.Drawing.Size(129, 20);
+            this.customerRegisterCNPJText.TabIndex = 24;
             // 
-            // rgTextBox
+            // customerRegisterRGText
             // 
-            this.rgTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "rg", true));
-            this.rgTextBox.Location = new System.Drawing.Point(375, 399);
-            this.rgTextBox.Name = "rgTextBox";
-            this.rgTextBox.Size = new System.Drawing.Size(113, 20);
-            this.rgTextBox.TabIndex = 26;
+            this.customerRegisterRGText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "rg", true));
+            this.customerRegisterRGText.Location = new System.Drawing.Point(375, 399);
+            this.customerRegisterRGText.Name = "customerRegisterRGText";
+            this.customerRegisterRGText.Size = new System.Drawing.Size(113, 20);
+            this.customerRegisterRGText.TabIndex = 26;
             // 
-            // stateSubscriptionTextBox
+            // customerRegisterStateSubscriptionText
             // 
-            this.stateSubscriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "stateSubscription", true));
-            this.stateSubscriptionTextBox.Location = new System.Drawing.Point(39, 453);
-            this.stateSubscriptionTextBox.Name = "stateSubscriptionTextBox";
-            this.stateSubscriptionTextBox.Size = new System.Drawing.Size(166, 20);
-            this.stateSubscriptionTextBox.TabIndex = 28;
+            this.customerRegisterStateSubscriptionText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "stateSubscription", true));
+            this.customerRegisterStateSubscriptionText.Location = new System.Drawing.Point(39, 453);
+            this.customerRegisterStateSubscriptionText.Name = "customerRegisterStateSubscriptionText";
+            this.customerRegisterStateSubscriptionText.Size = new System.Drawing.Size(166, 20);
+            this.customerRegisterStateSubscriptionText.TabIndex = 28;
             // 
             // CustomerRegister
             // 
@@ -508,12 +508,12 @@
             this.Controls.Add(this.typeTextBox);
             this.Controls.Add(customerRegisterCPFLabel);
             this.Controls.Add(this.customerRegisterCPFText);
-            this.Controls.Add(cnpjLabel);
-            this.Controls.Add(this.cnpjTextBox);
-            this.Controls.Add(rgLabel);
-            this.Controls.Add(this.rgTextBox);
-            this.Controls.Add(stateSubscriptionLabel);
-            this.Controls.Add(this.stateSubscriptionTextBox);
+            this.Controls.Add(customerRegisterCNPJLabel);
+            this.Controls.Add(this.customerRegisterCNPJText);
+            this.Controls.Add(customerRegisterRGLabel);
+            this.Controls.Add(this.customerRegisterRGText);
+            this.Controls.Add(customerRegisterStateSubscriptionLabel);
+            this.Controls.Add(this.customerRegisterStateSubscriptionText);
             this.Controls.Add(this.customerBindingNavigator);
             this.Name = "CustomerRegister";
             this.Text = "CustomerRegister";
@@ -558,8 +558,8 @@
         private System.Windows.Forms.TextBox customerRegisterEmailText;
         private System.Windows.Forms.TextBox typeTextBox;
         private System.Windows.Forms.TextBox customerRegisterCPFText;
-        private System.Windows.Forms.TextBox cnpjTextBox;
-        private System.Windows.Forms.TextBox rgTextBox;
-        private System.Windows.Forms.TextBox stateSubscriptionTextBox;
+        private System.Windows.Forms.TextBox customerRegisterCNPJText;
+        private System.Windows.Forms.TextBox customerRegisterRGText;
+        private System.Windows.Forms.TextBox customerRegisterStateSubscriptionText;
     }
 }
