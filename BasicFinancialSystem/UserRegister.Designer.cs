@@ -74,6 +74,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingNavigator)).BeginInit();
@@ -87,7 +88,7 @@
             this.userRegisterCodeLabel.AutoSize = true;
             this.userRegisterCodeLabel.BackColor = System.Drawing.Color.White;
             this.userRegisterCodeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRegisterCodeLabel.Location = new System.Drawing.Point(65, 44);
+            this.userRegisterCodeLabel.Location = new System.Drawing.Point(78, 44);
             this.userRegisterCodeLabel.Name = "userRegisterCodeLabel";
             this.userRegisterCodeLabel.Size = new System.Drawing.Size(63, 21);
             this.userRegisterCodeLabel.TabIndex = 0;
@@ -97,7 +98,7 @@
             // 
             this.userRegisterNameLabel.AutoSize = true;
             this.userRegisterNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRegisterNameLabel.Location = new System.Drawing.Point(65, 103);
+            this.userRegisterNameLabel.Location = new System.Drawing.Point(78, 103);
             this.userRegisterNameLabel.Name = "userRegisterNameLabel";
             this.userRegisterNameLabel.Size = new System.Drawing.Size(56, 21);
             this.userRegisterNameLabel.TabIndex = 2;
@@ -107,7 +108,7 @@
             // 
             this.userRegisterLevelLabel.AutoSize = true;
             this.userRegisterLevelLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRegisterLevelLabel.Location = new System.Drawing.Point(65, 159);
+            this.userRegisterLevelLabel.Location = new System.Drawing.Point(78, 159);
             this.userRegisterLevelLabel.Name = "userRegisterLevelLabel";
             this.userRegisterLevelLabel.Size = new System.Drawing.Size(49, 21);
             this.userRegisterLevelLabel.TabIndex = 4;
@@ -117,7 +118,7 @@
             // 
             this.userRegistrationLoginLabel.AutoSize = true;
             this.userRegistrationLoginLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRegistrationLoginLabel.Location = new System.Drawing.Point(65, 216);
+            this.userRegistrationLoginLabel.Location = new System.Drawing.Point(78, 216);
             this.userRegistrationLoginLabel.Name = "userRegistrationLoginLabel";
             this.userRegistrationLoginLabel.Size = new System.Drawing.Size(52, 21);
             this.userRegistrationLoginLabel.TabIndex = 6;
@@ -127,7 +128,7 @@
             // 
             this.userRegisterPasswordLabel.AutoSize = true;
             this.userRegisterPasswordLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRegisterPasswordLabel.Location = new System.Drawing.Point(66, 274);
+            this.userRegisterPasswordLabel.Location = new System.Drawing.Point(79, 274);
             this.userRegisterPasswordLabel.Name = "userRegisterPasswordLabel";
             this.userRegisterPasswordLabel.Size = new System.Drawing.Size(56, 21);
             this.userRegisterPasswordLabel.TabIndex = 8;
@@ -140,7 +141,7 @@
             this.userRegisterPreviousButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userRegisterPreviousButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterPreviousButton.ForeColor = System.Drawing.Color.White;
-            this.userRegisterPreviousButton.Location = new System.Drawing.Point(69, 349);
+            this.userRegisterPreviousButton.Location = new System.Drawing.Point(82, 349);
             this.userRegisterPreviousButton.Name = "userRegisterPreviousButton";
             this.userRegisterPreviousButton.Size = new System.Drawing.Size(75, 37);
             this.userRegisterPreviousButton.TabIndex = 10;
@@ -155,7 +156,7 @@
             this.userRegisterNextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userRegisterNextButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterNextButton.ForeColor = System.Drawing.Color.White;
-            this.userRegisterNextButton.Location = new System.Drawing.Point(150, 349);
+            this.userRegisterNextButton.Location = new System.Drawing.Point(163, 349);
             this.userRegisterNextButton.Name = "userRegisterNextButton";
             this.userRegisterNextButton.Size = new System.Drawing.Size(75, 37);
             this.userRegisterNextButton.TabIndex = 11;
@@ -169,7 +170,7 @@
             this.userRegisterNewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userRegisterNewButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterNewButton.ForeColor = System.Drawing.Color.White;
-            this.userRegisterNewButton.Location = new System.Drawing.Point(231, 392);
+            this.userRegisterNewButton.Location = new System.Drawing.Point(244, 392);
             this.userRegisterNewButton.Name = "userRegisterNewButton";
             this.userRegisterNewButton.Size = new System.Drawing.Size(75, 37);
             this.userRegisterNewButton.TabIndex = 12;
@@ -183,7 +184,7 @@
             this.userRegisterEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userRegisterEditButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterEditButton.ForeColor = System.Drawing.Color.White;
-            this.userRegisterEditButton.Location = new System.Drawing.Point(69, 392);
+            this.userRegisterEditButton.Location = new System.Drawing.Point(82, 392);
             this.userRegisterEditButton.Name = "userRegisterEditButton";
             this.userRegisterEditButton.Size = new System.Drawing.Size(75, 37);
             this.userRegisterEditButton.TabIndex = 13;
@@ -197,7 +198,7 @@
             this.userRegisterDeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userRegisterDeleteButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterDeleteButton.ForeColor = System.Drawing.Color.White;
-            this.userRegisterDeleteButton.Location = new System.Drawing.Point(150, 392);
+            this.userRegisterDeleteButton.Location = new System.Drawing.Point(163, 392);
             this.userRegisterDeleteButton.Name = "userRegisterDeleteButton";
             this.userRegisterDeleteButton.Size = new System.Drawing.Size(75, 37);
             this.userRegisterDeleteButton.TabIndex = 14;
@@ -240,7 +241,7 @@
             this.userRegisterSearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.userRegisterSearchButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterSearchButton.ForeColor = System.Drawing.Color.White;
-            this.userRegisterSearchButton.Location = new System.Drawing.Point(231, 349);
+            this.userRegisterSearchButton.Location = new System.Drawing.Point(244, 349);
             this.userRegisterSearchButton.Name = "userRegisterSearchButton";
             this.userRegisterSearchButton.Size = new System.Drawing.Size(75, 37);
             this.userRegisterSearchButton.TabIndex = 17;
@@ -414,7 +415,7 @@
             // userRegisterCodeText
             // 
             this.userRegisterCodeText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "id", true));
-            this.userRegisterCodeText.Location = new System.Drawing.Point(69, 70);
+            this.userRegisterCodeText.Location = new System.Drawing.Point(82, 70);
             this.userRegisterCodeText.Name = "userRegisterCodeText";
             this.userRegisterCodeText.Size = new System.Drawing.Size(57, 20);
             this.userRegisterCodeText.TabIndex = 22;
@@ -422,7 +423,7 @@
             // userRegisterNameText
             // 
             this.userRegisterNameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "name", true));
-            this.userRegisterNameText.Location = new System.Drawing.Point(69, 127);
+            this.userRegisterNameText.Location = new System.Drawing.Point(82, 127);
             this.userRegisterNameText.Name = "userRegisterNameText";
             this.userRegisterNameText.Size = new System.Drawing.Size(290, 20);
             this.userRegisterNameText.TabIndex = 24;
@@ -430,7 +431,7 @@
             // userRegisterLevelText
             // 
             this.userRegisterLevelText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "level", true));
-            this.userRegisterLevelText.Location = new System.Drawing.Point(69, 183);
+            this.userRegisterLevelText.Location = new System.Drawing.Point(82, 183);
             this.userRegisterLevelText.Name = "userRegisterLevelText";
             this.userRegisterLevelText.Size = new System.Drawing.Size(28, 20);
             this.userRegisterLevelText.TabIndex = 26;
@@ -438,7 +439,7 @@
             // userRegisterLoginText
             // 
             this.userRegisterLoginText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "login", true));
-            this.userRegisterLoginText.Location = new System.Drawing.Point(69, 240);
+            this.userRegisterLoginText.Location = new System.Drawing.Point(82, 240);
             this.userRegisterLoginText.Name = "userRegisterLoginText";
             this.userRegisterLoginText.Size = new System.Drawing.Size(196, 20);
             this.userRegisterLoginText.TabIndex = 28;
@@ -446,7 +447,7 @@
             // userRegisterPasswordText
             // 
             this.userRegisterPasswordText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "password", true));
-            this.userRegisterPasswordText.Location = new System.Drawing.Point(69, 298);
+            this.userRegisterPasswordText.Location = new System.Drawing.Point(82, 298);
             this.userRegisterPasswordText.Name = "userRegisterPasswordText";
             this.userRegisterPasswordText.Size = new System.Drawing.Size(196, 20);
             this.userRegisterPasswordText.TabIndex = 30;
@@ -481,6 +482,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.userRegisterCodeText);
             this.panel1.Controls.Add(this.userRegisterLoginText);
             this.panel1.Controls.Add(this.userRegisterPasswordText);
@@ -522,11 +524,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 84);
+            this.button1.Location = new System.Drawing.Point(18, 84);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 40);
+            this.button1.Size = new System.Drawing.Size(182, 40);
             this.button1.TabIndex = 20;
-            this.button1.Text = "   Cadastro de Clientes";
+            this.button1.Text = "Cadastro de Clientes";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -571,6 +573,20 @@
             this.button4.Text = "Cadastro de Contas a Receber";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(-1, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(53, 42);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "<-";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // UserRegisterForm
             // 
@@ -644,5 +660,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
     }
 }
