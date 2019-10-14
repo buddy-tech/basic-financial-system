@@ -44,3 +44,7 @@ C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\Ba
 C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.BillToPayRegister.resources
 C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.CustomerRegister.resources
 C:\Users\aluno1\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.ProviderRegister.resources
+C:\Users\davif\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.BillsToReceiveRegister.resources
+C:\Users\davif\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.BillToPayRegister.resources
+C:\Users\davif\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.CustomerRegister.resources
+C:\Users\davif\Desktop\basic-financial-system\BasicFinancialSystem\obj\Debug\BasicFinancialSystem.ProviderRegister.resources
