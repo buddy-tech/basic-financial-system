@@ -50,35 +50,41 @@
             this.userTableAdapter = new BasicFinancialSystem.FinancialDataSetTableAdapters.UserTableAdapter();
             this.tableAdapterManager = new BasicFinancialSystem.FinancialDataSetTableAdapters.TableAdapterManager();
             this.userBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.userBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.userRegisterCodeText = new System.Windows.Forms.TextBox();
             this.userRegisterNameText = new System.Windows.Forms.TextBox();
             this.userRegisterLevelText = new System.Windows.Forms.TextBox();
             this.userRegisterLoginText = new System.Windows.Forms.TextBox();
             this.userRegisterPasswordText = new System.Windows.Forms.TextBox();
+            this.userRegisterSearchPanel = new System.Windows.Forms.Panel();
+            this.SearchPanelLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingNavigator)).BeginInit();
             this.userBindingNavigator.SuspendLayout();
+            this.userRegisterSearchPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // userRegisterCodeLabel
             // 
             this.userRegisterCodeLabel.AutoSize = true;
+            this.userRegisterCodeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRegisterCodeLabel.Location = new System.Drawing.Point(60, 65);
             this.userRegisterCodeLabel.Name = "userRegisterCodeLabel";
-            this.userRegisterCodeLabel.Size = new System.Drawing.Size(35, 13);
+            this.userRegisterCodeLabel.Size = new System.Drawing.Size(49, 21);
             this.userRegisterCodeLabel.TabIndex = 0;
             this.userRegisterCodeLabel.Text = "Code:";
             // 
@@ -194,7 +200,7 @@
             // 
             // userRegisterPrintButton
             // 
-            this.userRegisterPrintButton.Location = new System.Drawing.Point(578, 55);
+            this.userRegisterPrintButton.Location = new System.Drawing.Point(395, 37);
             this.userRegisterPrintButton.Name = "userRegisterPrintButton";
             this.userRegisterPrintButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterPrintButton.TabIndex = 18;
@@ -203,7 +209,7 @@
             // 
             // userRegisterExitButton
             // 
-            this.userRegisterExitButton.Location = new System.Drawing.Point(578, 325);
+            this.userRegisterExitButton.Location = new System.Drawing.Point(395, 146);
             this.userRegisterExitButton.Name = "userRegisterExitButton";
             this.userRegisterExitButton.Size = new System.Drawing.Size(75, 23);
             this.userRegisterExitButton.TabIndex = 19;
@@ -261,9 +267,35 @@
             this.userBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.userBindingNavigator.Name = "userBindingNavigator";
             this.userBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.userBindingNavigator.Size = new System.Drawing.Size(726, 25);
+            this.userBindingNavigator.Size = new System.Drawing.Size(818, 25);
             this.userBindingNavigator.TabIndex = 20;
             this.userBindingNavigator.Text = "bindingNavigator1";
+            this.userBindingNavigator.Visible = false;
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -297,16 +329,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -329,26 +354,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
             // 
             // userBindingNavigatorSaveItem
             // 
@@ -362,7 +369,7 @@
             // userRegisterCodeText
             // 
             this.userRegisterCodeText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "id", true));
-            this.userRegisterCodeText.Location = new System.Drawing.Point(103, 62);
+            this.userRegisterCodeText.Location = new System.Drawing.Point(114, 65);
             this.userRegisterCodeText.Name = "userRegisterCodeText";
             this.userRegisterCodeText.Size = new System.Drawing.Size(57, 20);
             this.userRegisterCodeText.TabIndex = 22;
@@ -400,12 +407,42 @@
             this.userRegisterPasswordText.TabIndex = 30;
             this.userRegisterPasswordText.UseSystemPasswordChar = true;
             // 
+            // userRegisterSearchPanel
+            // 
+            this.userRegisterSearchPanel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.userRegisterSearchPanel.Controls.Add(this.SearchPanelLabel);
+            this.userRegisterSearchPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.userRegisterSearchPanel.Location = new System.Drawing.Point(654, 0);
+            this.userRegisterSearchPanel.Name = "userRegisterSearchPanel";
+            this.userRegisterSearchPanel.Size = new System.Drawing.Size(200, 493);
+            this.userRegisterSearchPanel.TabIndex = 31;
+            // 
+            // SearchPanelLabel
+            // 
+            this.SearchPanelLabel.AutoSize = true;
+            this.SearchPanelLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchPanelLabel.ForeColor = System.Drawing.Color.White;
+            this.SearchPanelLabel.Location = new System.Drawing.Point(13, 37);
+            this.SearchPanelLabel.Name = "SearchPanelLabel";
+            this.SearchPanelLabel.Size = new System.Drawing.Size(140, 30);
+            this.SearchPanelLabel.TabIndex = 0;
+            this.SearchPanelLabel.Text = "Veja também:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.userRegisterCodeText);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(660, 493);
+            this.panel1.TabIndex = 32;
+            // 
             // UserRegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 402);
-            this.Controls.Add(this.userRegisterCodeText);
+            this.ClientSize = new System.Drawing.Size(854, 493);
+            this.Controls.Add(this.userRegisterSearchPanel);
             this.Controls.Add(this.userRegisterNameText);
             this.Controls.Add(this.userRegisterLevelText);
             this.Controls.Add(this.userRegisterLoginText);
@@ -426,6 +463,8 @@
             this.Controls.Add(this.userRegisterLevelLabel);
             this.Controls.Add(this.userRegisterNameLabel);
             this.Controls.Add(this.userRegisterCodeLabel);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserRegisterForm";
             this.Text = "User Registration";
             this.Load += new System.EventHandler(this.UserRegisterForm_Load);
@@ -434,14 +473,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.userBindingNavigator)).EndInit();
             this.userBindingNavigator.ResumeLayout(false);
             this.userBindingNavigator.PerformLayout();
+            this.userRegisterSearchPanel.ResumeLayout(false);
+            this.userRegisterSearchPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label userRegisterCodeLabel;
         private System.Windows.Forms.Label userRegisterNameLabel;
         private System.Windows.Forms.Label userRegisterLevelLabel;
         private System.Windows.Forms.Label userRegistrationLoginLabel;
@@ -478,5 +519,9 @@
         private System.Windows.Forms.TextBox userRegisterLevelText;
         private System.Windows.Forms.TextBox userRegisterLoginText;
         private System.Windows.Forms.TextBox userRegisterPasswordText;
+        private System.Windows.Forms.Label userRegisterCodeLabel;
+        private System.Windows.Forms.Panel userRegisterSearchPanel;
+        private System.Windows.Forms.Label SearchPanelLabel;
+        private System.Windows.Forms.Panel panel1;
     }
 }
