@@ -17,11 +17,6 @@ namespace BasicFinancialSystem
             InitializeComponent();
         }
 
-        private void UserRegisterLoad(object sender, EventArgs e)
-        {
-            //this.userTableAdapter.Fill(this.Financial.user);
-        }
-
         private void userRegisterPreviousButton_Click(object sender, EventArgs e)
         {
             
@@ -91,6 +86,14 @@ namespace BasicFinancialSystem
             // TODO: esta linha de código carrega dados na tabela 'financialDataSet.User'. Você pode movê-la ou removê-la conforme necessário.
             this.userTableAdapter.Fill(this.financialDataSet.User);
 
+        }
+
+        // This method serves to back to previous form (principal form) in user register.
+        private void userRegisterBackButton_Click(object sender, EventArgs e)
+        {
+            PrincipalForm principalForm = new PrincipalForm();
+            principalForm.Show();
+            Close();
         }
     }
 }

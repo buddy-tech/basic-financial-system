@@ -67,14 +67,14 @@
             this.userRegisterLoginText = new System.Windows.Forms.TextBox();
             this.userRegisterPasswordText = new System.Windows.Forms.TextBox();
             this.userRegisterSearchPanel = new System.Windows.Forms.Panel();
+            this.uRPanelBillToReceiveButton = new System.Windows.Forms.Button();
+            this.uRPanelBillToPayButton = new System.Windows.Forms.Button();
+            this.uRPanelProviderButton = new System.Windows.Forms.Button();
+            this.uRPanelCustomerButton = new System.Windows.Forms.Button();
             this.SearchPanelLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userRegisterBackButton = new System.Windows.Forms.Button();
             this.userRegisterPrintButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingNavigator)).BeginInit();
@@ -456,10 +456,10 @@
             // userRegisterSearchPanel
             // 
             this.userRegisterSearchPanel.BackColor = System.Drawing.Color.RoyalBlue;
-            this.userRegisterSearchPanel.Controls.Add(this.button4);
-            this.userRegisterSearchPanel.Controls.Add(this.button3);
-            this.userRegisterSearchPanel.Controls.Add(this.button2);
-            this.userRegisterSearchPanel.Controls.Add(this.button1);
+            this.userRegisterSearchPanel.Controls.Add(this.uRPanelBillToReceiveButton);
+            this.userRegisterSearchPanel.Controls.Add(this.uRPanelBillToPayButton);
+            this.userRegisterSearchPanel.Controls.Add(this.uRPanelProviderButton);
+            this.userRegisterSearchPanel.Controls.Add(this.uRPanelCustomerButton);
             this.userRegisterSearchPanel.Controls.Add(this.SearchPanelLabel);
             this.userRegisterSearchPanel.Controls.Add(this.userRegisterExitButton);
             this.userRegisterSearchPanel.Dock = System.Windows.Forms.DockStyle.Right;
@@ -467,6 +467,62 @@
             this.userRegisterSearchPanel.Name = "userRegisterSearchPanel";
             this.userRegisterSearchPanel.Size = new System.Drawing.Size(200, 493);
             this.userRegisterSearchPanel.TabIndex = 31;
+            // 
+            // uRPanelBillToReceiveButton
+            // 
+            this.uRPanelBillToReceiveButton.FlatAppearance.BorderSize = 0;
+            this.uRPanelBillToReceiveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uRPanelBillToReceiveButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uRPanelBillToReceiveButton.ForeColor = System.Drawing.Color.White;
+            this.uRPanelBillToReceiveButton.Location = new System.Drawing.Point(13, 274);
+            this.uRPanelBillToReceiveButton.Name = "uRPanelBillToReceiveButton";
+            this.uRPanelBillToReceiveButton.Size = new System.Drawing.Size(184, 51);
+            this.uRPanelBillToReceiveButton.TabIndex = 23;
+            this.uRPanelBillToReceiveButton.Text = "Cadastro de Contas a Receber";
+            this.uRPanelBillToReceiveButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uRPanelBillToReceiveButton.UseVisualStyleBackColor = true;
+            // 
+            // uRPanelBillToPayButton
+            // 
+            this.uRPanelBillToPayButton.FlatAppearance.BorderSize = 0;
+            this.uRPanelBillToPayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uRPanelBillToPayButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uRPanelBillToPayButton.ForeColor = System.Drawing.Color.White;
+            this.uRPanelBillToPayButton.Location = new System.Drawing.Point(12, 209);
+            this.uRPanelBillToPayButton.Name = "uRPanelBillToPayButton";
+            this.uRPanelBillToPayButton.Size = new System.Drawing.Size(187, 51);
+            this.uRPanelBillToPayButton.TabIndex = 22;
+            this.uRPanelBillToPayButton.Text = "Cadastro de Contas a Pagar";
+            this.uRPanelBillToPayButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uRPanelBillToPayButton.UseVisualStyleBackColor = true;
+            // 
+            // uRPanelProviderButton
+            // 
+            this.uRPanelProviderButton.FlatAppearance.BorderSize = 0;
+            this.uRPanelProviderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uRPanelProviderButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uRPanelProviderButton.ForeColor = System.Drawing.Color.White;
+            this.uRPanelProviderButton.Location = new System.Drawing.Point(12, 140);
+            this.uRPanelProviderButton.Name = "uRPanelProviderButton";
+            this.uRPanelProviderButton.Size = new System.Drawing.Size(187, 51);
+            this.uRPanelProviderButton.TabIndex = 21;
+            this.uRPanelProviderButton.Text = "Cadastro de Fornecedores";
+            this.uRPanelProviderButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uRPanelProviderButton.UseVisualStyleBackColor = true;
+            // 
+            // uRPanelCustomerButton
+            // 
+            this.uRPanelCustomerButton.FlatAppearance.BorderSize = 0;
+            this.uRPanelCustomerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uRPanelCustomerButton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uRPanelCustomerButton.ForeColor = System.Drawing.Color.White;
+            this.uRPanelCustomerButton.Location = new System.Drawing.Point(13, 84);
+            this.uRPanelCustomerButton.Name = "uRPanelCustomerButton";
+            this.uRPanelCustomerButton.Size = new System.Drawing.Size(186, 40);
+            this.uRPanelCustomerButton.TabIndex = 20;
+            this.uRPanelCustomerButton.Text = "Cadastro de Clientes";
+            this.uRPanelCustomerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uRPanelCustomerButton.UseVisualStyleBackColor = true;
             // 
             // SearchPanelLabel
             // 
@@ -482,7 +538,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.userRegisterBackButton);
             this.panel1.Controls.Add(this.userRegisterCodeText);
             this.panel1.Controls.Add(this.userRegisterLoginText);
             this.panel1.Controls.Add(this.userRegisterPasswordText);
@@ -507,6 +563,21 @@
             this.panel1.Size = new System.Drawing.Size(660, 493);
             this.panel1.TabIndex = 32;
             // 
+            // userRegisterBackButton
+            // 
+            this.userRegisterBackButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.userRegisterBackButton.FlatAppearance.BorderSize = 0;
+            this.userRegisterBackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.userRegisterBackButton.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userRegisterBackButton.ForeColor = System.Drawing.Color.White;
+            this.userRegisterBackButton.Location = new System.Drawing.Point(-1, 0);
+            this.userRegisterBackButton.Name = "userRegisterBackButton";
+            this.userRegisterBackButton.Size = new System.Drawing.Size(53, 42);
+            this.userRegisterBackButton.TabIndex = 31;
+            this.userRegisterBackButton.Text = "<-";
+            this.userRegisterBackButton.UseVisualStyleBackColor = false;
+            this.userRegisterBackButton.Click += new System.EventHandler(this.userRegisterBackButton_Click);
+            // 
             // userRegisterPrintButton
             // 
             this.userRegisterPrintButton.FlatAppearance.BorderSize = 0;
@@ -517,76 +588,6 @@
             this.userRegisterPrintButton.Size = new System.Drawing.Size(65, 46);
             this.userRegisterPrintButton.TabIndex = 18;
             this.userRegisterPrintButton.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(18, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 40);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Cadastro de Clientes";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(13, 140);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 51);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Cadastro de Fornecedores";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(13, 209);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(187, 51);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Cadastro de Contas a Pagar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(13, 274);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 51);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Cadastro de Contas a Receber";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(-1, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(53, 42);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "<-";
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // UserRegisterForm
             // 
@@ -656,10 +657,10 @@
         private System.Windows.Forms.Label SearchPanelLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button userRegisterPrintButton;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button uRPanelBillToReceiveButton;
+        private System.Windows.Forms.Button uRPanelBillToPayButton;
+        private System.Windows.Forms.Button uRPanelProviderButton;
+        private System.Windows.Forms.Button uRPanelCustomerButton;
+        private System.Windows.Forms.Button userRegisterBackButton;
     }
 }
