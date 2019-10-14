@@ -51,7 +51,7 @@ namespace BasicFinancialSystem
             userRegisterDeleteButton.Enabled = false;
             userRegisterSearchButton.Enabled = false;
             userRegisterPrintButton.Enabled = false;
-            userRegisterExitButton.Enabled = false;
+            userRegisterExitButton.Enabled = true;
         }
 
         private void Disable()
@@ -84,6 +84,7 @@ namespace BasicFinancialSystem
         private void UserRegisterForm_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'financialDataSet.User'. Você pode movê-la ou removê-la conforme necessário.
+            Enable();
             this.userTableAdapter.Fill(this.financialDataSet.User);
 
         }

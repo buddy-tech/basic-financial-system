@@ -22,7 +22,7 @@ namespace BasicFinancialSystem
             
             UserRegisterForm userRegisterForm = new UserRegisterForm();
             userRegisterForm.Show();
-            Close();
+            Close(); 
         }
 
 

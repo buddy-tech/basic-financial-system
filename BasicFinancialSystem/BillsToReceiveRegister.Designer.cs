@@ -63,8 +63,16 @@
             this.paymentDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.paidTextBox = new System.Windows.Forms.TextBox();
             this.observationTextBox = new System.Windows.Forms.TextBox();
-            this.billsToReceiveRegisterPreviousButton = new System.Windows.Forms.Button();
-            this.billsToReceiveRegisterNextButton = new System.Windows.Forms.Button();
+            this.previousButton = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.printButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.newButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             issuanceLabel = new System.Windows.Forms.Label();
             expiryLabel = new System.Windows.Forms.Label();
@@ -363,31 +371,111 @@
             this.observationTextBox.Size = new System.Drawing.Size(200, 20);
             this.observationTextBox.TabIndex = 16;
             // 
-            // billsToReceiveRegisterPreviousButton
+            // previousButton
             // 
-            this.billsToReceiveRegisterPreviousButton.Location = new System.Drawing.Point(61, 293);
-            this.billsToReceiveRegisterPreviousButton.Name = "billsToReceiveRegisterPreviousButton";
-            this.billsToReceiveRegisterPreviousButton.Size = new System.Drawing.Size(75, 23);
-            this.billsToReceiveRegisterPreviousButton.TabIndex = 17;
-            this.billsToReceiveRegisterPreviousButton.Text = "Previous";
-            this.billsToReceiveRegisterPreviousButton.UseVisualStyleBackColor = true;
+            this.previousButton.Location = new System.Drawing.Point(61, 293);
+            this.previousButton.Name = "previousButton";
+            this.previousButton.Size = new System.Drawing.Size(75, 23);
+            this.previousButton.TabIndex = 17;
+            this.previousButton.Text = "Previous";
+            this.previousButton.UseVisualStyleBackColor = true;
             // 
-            // billsToReceiveRegisterNextButton
+            // nextButton
             // 
-            this.billsToReceiveRegisterNextButton.Location = new System.Drawing.Point(143, 293);
-            this.billsToReceiveRegisterNextButton.Name = "billsToReceiveRegisterNextButton";
-            this.billsToReceiveRegisterNextButton.Size = new System.Drawing.Size(75, 23);
-            this.billsToReceiveRegisterNextButton.TabIndex = 18;
-            this.billsToReceiveRegisterNextButton.Text = "Next";
-            this.billsToReceiveRegisterNextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Location = new System.Drawing.Point(143, 293);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.TabIndex = 18;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = true;
+            // 
+            // editButton
+            // 
+            this.editButton.Location = new System.Drawing.Point(61, 322);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 19;
+            this.editButton.Text = "Edit";
+            this.editButton.UseVisualStyleBackColor = true;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(143, 322);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 20;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(224, 293);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 21;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(224, 322);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 22;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            // 
+            // printButton
+            // 
+            this.printButton.Location = new System.Drawing.Point(305, 293);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(75, 23);
+            this.printButton.TabIndex = 23;
+            this.printButton.Text = "Print";
+            this.printButton.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(305, 322);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 24;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
+            // newButton
+            // 
+            this.newButton.Location = new System.Drawing.Point(386, 293);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(75, 23);
+            this.newButton.TabIndex = 25;
+            this.newButton.Text = "New";
+            this.newButton.UseVisualStyleBackColor = true;
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.Location = new System.Drawing.Point(386, 322);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 26;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // BillsToReceiveRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.billsToReceiveRegisterNextButton);
-            this.Controls.Add(this.billsToReceiveRegisterPreviousButton);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.newButton);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.printButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.editButton);
+            this.Controls.Add(this.nextButton);
+            this.Controls.Add(this.previousButton);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(issuanceLabel);
@@ -445,7 +533,15 @@
         private System.Windows.Forms.DateTimePicker paymentDateTimePicker;
         private System.Windows.Forms.TextBox paidTextBox;
         private System.Windows.Forms.TextBox observationTextBox;
-        private System.Windows.Forms.Button billsToReceiveRegisterPreviousButton;
-        private System.Windows.Forms.Button billsToReceiveRegisterNextButton;
+        private System.Windows.Forms.Button previousButton;
+        private System.Windows.Forms.Button nextButton;
+        private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button printButton;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button newButton;
+        private System.Windows.Forms.Button cancelButton;
     }
 }
