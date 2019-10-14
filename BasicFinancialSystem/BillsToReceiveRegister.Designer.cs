@@ -73,6 +73,7 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.newButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             idLabel = new System.Windows.Forms.Label();
             issuanceLabel = new System.Windows.Forms.Label();
             expiryLabel = new System.Windows.Forms.Label();
@@ -90,16 +91,17 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(58, 76);
+            idLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.Location = new System.Drawing.Point(388, 60);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(18, 13);
+            idLabel.Size = new System.Drawing.Size(32, 25);
             idLabel.TabIndex = 1;
             idLabel.Text = "id:";
             // 
             // issuanceLabel
             // 
             issuanceLabel.AutoSize = true;
-            issuanceLabel.Location = new System.Drawing.Point(58, 103);
+            issuanceLabel.Location = new System.Drawing.Point(398, 96);
             issuanceLabel.Name = "issuanceLabel";
             issuanceLabel.Size = new System.Drawing.Size(52, 13);
             issuanceLabel.TabIndex = 3;
@@ -108,7 +110,7 @@
             // expiryLabel
             // 
             expiryLabel.AutoSize = true;
-            expiryLabel.Location = new System.Drawing.Point(58, 129);
+            expiryLabel.Location = new System.Drawing.Point(398, 122);
             expiryLabel.Name = "expiryLabel";
             expiryLabel.Size = new System.Drawing.Size(37, 13);
             expiryLabel.TabIndex = 5;
@@ -117,7 +119,7 @@
             // billLabel
             // 
             billLabel.AutoSize = true;
-            billLabel.Location = new System.Drawing.Point(58, 154);
+            billLabel.Location = new System.Drawing.Point(398, 147);
             billLabel.Name = "billLabel";
             billLabel.Size = new System.Drawing.Size(22, 13);
             billLabel.TabIndex = 7;
@@ -126,7 +128,7 @@
             // customerLabel
             // 
             customerLabel.AutoSize = true;
-            customerLabel.Location = new System.Drawing.Point(58, 180);
+            customerLabel.Location = new System.Drawing.Point(398, 173);
             customerLabel.Name = "customerLabel";
             customerLabel.Size = new System.Drawing.Size(53, 13);
             customerLabel.TabIndex = 9;
@@ -135,7 +137,7 @@
             // paymentLabel
             // 
             paymentLabel.AutoSize = true;
-            paymentLabel.Location = new System.Drawing.Point(58, 207);
+            paymentLabel.Location = new System.Drawing.Point(398, 200);
             paymentLabel.Name = "paymentLabel";
             paymentLabel.Size = new System.Drawing.Size(50, 13);
             paymentLabel.TabIndex = 11;
@@ -144,7 +146,7 @@
             // paidLabel
             // 
             paidLabel.AutoSize = true;
-            paidLabel.Location = new System.Drawing.Point(58, 232);
+            paidLabel.Location = new System.Drawing.Point(398, 225);
             paidLabel.Name = "paidLabel";
             paidLabel.Size = new System.Drawing.Size(30, 13);
             paidLabel.TabIndex = 13;
@@ -153,7 +155,7 @@
             // observationLabel
             // 
             observationLabel.AutoSize = true;
-            observationLabel.Location = new System.Drawing.Point(58, 258);
+            observationLabel.Location = new System.Drawing.Point(398, 251);
             observationLabel.Name = "observationLabel";
             observationLabel.Size = new System.Drawing.Size(65, 13);
             observationLabel.TabIndex = 15;
@@ -311,7 +313,7 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.billToReceiveBindingSource, "id", true));
-            this.idTextBox.Location = new System.Drawing.Point(129, 73);
+            this.idTextBox.Location = new System.Drawing.Point(469, 66);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(200, 20);
             this.idTextBox.TabIndex = 2;
@@ -319,7 +321,7 @@
             // issuanceDateTimePicker
             // 
             this.issuanceDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.billToReceiveBindingSource, "issuance", true));
-            this.issuanceDateTimePicker.Location = new System.Drawing.Point(129, 99);
+            this.issuanceDateTimePicker.Location = new System.Drawing.Point(469, 92);
             this.issuanceDateTimePicker.Name = "issuanceDateTimePicker";
             this.issuanceDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.issuanceDateTimePicker.TabIndex = 4;
@@ -327,7 +329,7 @@
             // expiryDateTimePicker
             // 
             this.expiryDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.billToReceiveBindingSource, "expiry", true));
-            this.expiryDateTimePicker.Location = new System.Drawing.Point(129, 125);
+            this.expiryDateTimePicker.Location = new System.Drawing.Point(469, 118);
             this.expiryDateTimePicker.Name = "expiryDateTimePicker";
             this.expiryDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.expiryDateTimePicker.TabIndex = 6;
@@ -335,7 +337,7 @@
             // billTextBox
             // 
             this.billTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.billToReceiveBindingSource, "bill", true));
-            this.billTextBox.Location = new System.Drawing.Point(129, 151);
+            this.billTextBox.Location = new System.Drawing.Point(469, 144);
             this.billTextBox.Name = "billTextBox";
             this.billTextBox.Size = new System.Drawing.Size(200, 20);
             this.billTextBox.TabIndex = 8;
@@ -343,7 +345,7 @@
             // customerTextBox
             // 
             this.customerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.billToReceiveBindingSource, "customer", true));
-            this.customerTextBox.Location = new System.Drawing.Point(129, 177);
+            this.customerTextBox.Location = new System.Drawing.Point(469, 170);
             this.customerTextBox.Name = "customerTextBox";
             this.customerTextBox.Size = new System.Drawing.Size(200, 20);
             this.customerTextBox.TabIndex = 10;
@@ -351,7 +353,7 @@
             // paymentDateTimePicker
             // 
             this.paymentDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.billToReceiveBindingSource, "payment", true));
-            this.paymentDateTimePicker.Location = new System.Drawing.Point(129, 203);
+            this.paymentDateTimePicker.Location = new System.Drawing.Point(469, 196);
             this.paymentDateTimePicker.Name = "paymentDateTimePicker";
             this.paymentDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.paymentDateTimePicker.TabIndex = 12;
@@ -359,7 +361,7 @@
             // paidTextBox
             // 
             this.paidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.billToReceiveBindingSource, "paid", true));
-            this.paidTextBox.Location = new System.Drawing.Point(129, 229);
+            this.paidTextBox.Location = new System.Drawing.Point(469, 222);
             this.paidTextBox.Name = "paidTextBox";
             this.paidTextBox.Size = new System.Drawing.Size(200, 20);
             this.paidTextBox.TabIndex = 14;
@@ -367,14 +369,14 @@
             // observationTextBox
             // 
             this.observationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.billToReceiveBindingSource, "observation", true));
-            this.observationTextBox.Location = new System.Drawing.Point(129, 255);
+            this.observationTextBox.Location = new System.Drawing.Point(469, 248);
             this.observationTextBox.Name = "observationTextBox";
             this.observationTextBox.Size = new System.Drawing.Size(200, 20);
             this.observationTextBox.TabIndex = 16;
             // 
             // previousButton
             // 
-            this.previousButton.Location = new System.Drawing.Point(61, 293);
+            this.previousButton.Location = new System.Drawing.Point(401, 286);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(75, 23);
             this.previousButton.TabIndex = 17;
@@ -383,7 +385,7 @@
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(143, 293);
+            this.nextButton.Location = new System.Drawing.Point(483, 286);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
             this.nextButton.TabIndex = 18;
@@ -392,7 +394,7 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(61, 322);
+            this.editButton.Location = new System.Drawing.Point(401, 315);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 19;
@@ -401,7 +403,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(143, 322);
+            this.searchButton.Location = new System.Drawing.Point(483, 315);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(75, 23);
             this.searchButton.TabIndex = 20;
@@ -410,7 +412,7 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(224, 293);
+            this.saveButton.Location = new System.Drawing.Point(564, 286);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 21;
@@ -419,7 +421,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(224, 322);
+            this.deleteButton.Location = new System.Drawing.Point(564, 315);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 22;
@@ -428,7 +430,7 @@
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(305, 293);
+            this.printButton.Location = new System.Drawing.Point(645, 286);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
             this.printButton.TabIndex = 23;
@@ -437,7 +439,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(305, 322);
+            this.exitButton.Location = new System.Drawing.Point(645, 315);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 24;
@@ -446,7 +448,7 @@
             // 
             // newButton
             // 
-            this.newButton.Location = new System.Drawing.Point(386, 293);
+            this.newButton.Location = new System.Drawing.Point(726, 286);
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(75, 23);
             this.newButton.TabIndex = 25;
@@ -455,18 +457,28 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(386, 322);
+            this.cancelButton.Location = new System.Drawing.Point(726, 315);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 26;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(242, 488);
+            this.panel1.TabIndex = 27;
+            // 
             // BillsToReceiveRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(881, 487);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.newButton);
             this.Controls.Add(this.exitButton);
@@ -546,5 +558,6 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button newButton;
         private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Panel panel1;
     }
 }
