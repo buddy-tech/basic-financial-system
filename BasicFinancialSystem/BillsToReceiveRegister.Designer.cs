@@ -212,6 +212,7 @@
             this.billToReceiveBindingNavigator.Size = new System.Drawing.Size(800, 25);
             this.billToReceiveBindingNavigator.TabIndex = 0;
             this.billToReceiveBindingNavigator.Text = "bindingNavigator1";
+            this.billToReceiveBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -493,8 +494,10 @@
             this.Controls.Add(observationLabel);
             this.Controls.Add(this.observationTextBox);
             this.Controls.Add(this.billToReceiveBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BillsToReceiveRegister";
-            this.Text = "BillsToReceiveRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.Load += new System.EventHandler(this.BillsToReceiveRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingSource)).EndInit();
