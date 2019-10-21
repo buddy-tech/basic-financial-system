@@ -190,6 +190,7 @@
             this.userRegisterEditButton.TabIndex = 13;
             this.userRegisterEditButton.Text = "Editar";
             this.userRegisterEditButton.UseVisualStyleBackColor = false;
+            this.userRegisterEditButton.Click += new System.EventHandler(this.userRegisterEditButton_Click);
             // 
             // userRegisterDeleteButton
             // 
@@ -314,7 +315,7 @@
             this.userBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.userBindingNavigator.Name = "userBindingNavigator";
             this.userBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.userBindingNavigator.Size = new System.Drawing.Size(818, 25);
+            this.userBindingNavigator.Size = new System.Drawing.Size(854, 25);
             this.userBindingNavigator.TabIndex = 20;
             this.userBindingNavigator.Text = "bindingNavigator1";
             this.userBindingNavigator.Visible = false;

@@ -108,5 +108,17 @@ namespace BasicFinancialSystem
             userTableAdapter.Update(financialDataSet.User);
             Disable();
         }
+
+        private void userRegisterEditButton_Click(object sender, EventArgs e)
+        {
+            if(userBindingSource.Count > 0)
+            {
+                Enable();
+            }
+            else
+            {
+                MessageBox.Show("No registers to edit!");
+            }
+        }
     }
 }
