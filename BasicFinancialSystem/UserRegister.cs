@@ -92,12 +92,21 @@ namespace BasicFinancialSystem
 
         }
 
-        // This method serves to back to previous form (principal form) in user register.
+        // This method serves to back to previous form (Principal Form) in User Register.
         private void userRegisterBackButton_Click(object sender, EventArgs e)
         {
             PrincipalForm principalForm = new PrincipalForm();
             principalForm.Show();
             Close();
+        }
+
+        // This method will save the data on the text box of User Register Form.
+        private void userRegisterSaveButton_Click(object sender, EventArgs e)
+        {
+            Validate();
+            userBindingSource.EndEdit();
+            userTableAdapter.Update(financialDataSet.User);
+            Disable();
         }
     }
 }

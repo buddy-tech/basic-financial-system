@@ -219,6 +219,7 @@
             this.userRegisterSaveButton.TabIndex = 15;
             this.userRegisterSaveButton.Text = "Salvar";
             this.userRegisterSaveButton.UseVisualStyleBackColor = false;
+            this.userRegisterSaveButton.Click += new System.EventHandler(this.userRegisterSaveButton_Click);
             // 
             // userRegisterCancelButton
             // 
