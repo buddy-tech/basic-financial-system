@@ -30,8 +30,11 @@ namespace BasicFinancialSystem
             }*/
         }
 
+        // This method closes the User Register Form and return to Principal Form.
         private void userRegisterExitButton_Click(object sender, EventArgs e)
         {
+            PrincipalForm principal = new PrincipalForm();
+            principal.Show();
             Close();
         }
 
