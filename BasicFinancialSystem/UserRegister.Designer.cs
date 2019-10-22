@@ -235,6 +235,7 @@
             this.userRegisterCancelButton.TabIndex = 16;
             this.userRegisterCancelButton.Text = "Cancelar";
             this.userRegisterCancelButton.UseVisualStyleBackColor = false;
+            this.userRegisterCancelButton.Click += new System.EventHandler(this.userRegisterCancelButton_Click);
             // 
             // userRegisterSearchButton
             // 

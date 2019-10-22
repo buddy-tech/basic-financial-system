@@ -65,7 +65,7 @@ namespace BasicFinancialSystem
             userRegisterLoginText.Enabled = false;
             userRegisterPasswordText.Enabled = false;
             userRegisterSaveButton.Enabled = false;
-            userRegisterCancelButton.Enabled = false;
+            userRegisterCancelButton.Enabled = true;
             userRegisterPreviousButton.Enabled = true;
             userRegisterNextButton.Enabled = true;
             userRegisterNewButton.Enabled = true;
@@ -76,6 +76,7 @@ namespace BasicFinancialSystem
             userRegisterExitButton.Enabled = true;
         }
 
+        // This method catch the textbox values and sends to DB.
         private void userBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -119,6 +120,12 @@ namespace BasicFinancialSystem
             {
                 MessageBox.Show("No registers to edit!");
             }
+        }
+
+        private void userRegisterCancelButton_Click(object sender, EventArgs e)
+        {
+            userBindingSource.CancelEdit();
+            Disable();
         }
     }
 }
