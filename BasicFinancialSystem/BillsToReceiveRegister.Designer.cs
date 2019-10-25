@@ -87,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingNavigator)).BeginInit();
             this.billToReceiveBindingNavigator.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // idLabel
@@ -391,7 +392,7 @@
             // 
             // previousButton
             // 
-            this.previousButton.Location = new System.Drawing.Point(67, 432);
+            this.previousButton.Location = new System.Drawing.Point(67, 415);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(75, 23);
             this.previousButton.TabIndex = 17;
@@ -400,7 +401,7 @@
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(149, 432);
+            this.nextButton.Location = new System.Drawing.Point(148, 415);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
             this.nextButton.TabIndex = 18;
@@ -409,7 +410,7 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(67, 461);
+            this.editButton.Location = new System.Drawing.Point(359, 415);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 19;
@@ -418,7 +419,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(149, 461);
+            this.searchButton.Location = new System.Drawing.Point(359, 461);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(75, 23);
             this.searchButton.TabIndex = 20;
@@ -427,7 +428,7 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(230, 432);
+            this.saveButton.Location = new System.Drawing.Point(552, 415);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 21;
@@ -436,7 +437,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(230, 461);
+            this.deleteButton.Location = new System.Drawing.Point(274, 461);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 22;
@@ -445,7 +446,7 @@
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(311, 432);
+            this.printButton.Location = new System.Drawing.Point(602, 22);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
             this.printButton.TabIndex = 23;
@@ -454,7 +455,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(311, 461);
+            this.exitButton.Location = new System.Drawing.Point(107, 461);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 24;
@@ -463,7 +464,7 @@
             // 
             // newButton
             // 
-            this.newButton.Location = new System.Drawing.Point(392, 432);
+            this.newButton.Location = new System.Drawing.Point(274, 415);
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(75, 23);
             this.newButton.TabIndex = 25;
@@ -472,7 +473,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(392, 461);
+            this.cancelButton.Location = new System.Drawing.Point(471, 415);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 26;
@@ -482,6 +483,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.exitButton);
             this.panel1.Location = new System.Drawing.Point(707, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 529);
@@ -505,7 +507,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.newButton);
-            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.printButton);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.saveButton);
@@ -540,6 +541,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingNavigator)).EndInit();
             this.billToReceiveBindingNavigator.ResumeLayout(false);
             this.billToReceiveBindingNavigator.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
