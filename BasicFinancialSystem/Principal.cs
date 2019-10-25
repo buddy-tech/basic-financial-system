@@ -31,6 +31,7 @@ namespace BasicFinancialSystem
             Close();
         }
 
+        // This method will redirect to 'Bills To Receive' formulary and close the 'Principal' formulary.
         private void registrationBillsToReceiveItem_Click(object sender, EventArgs e)
         {
             BillsToReceiveRegister billToReceiveRegister = new BillsToReceiveRegister();
