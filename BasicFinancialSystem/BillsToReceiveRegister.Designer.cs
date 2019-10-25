@@ -74,11 +74,11 @@
             this.newButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.rightPanel = new System.Windows.Forms.Panel();
-            this.leftPanel = new System.Windows.Forms.Panel();
-            this.leftPanelLabel = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.leftPanelLabel = new System.Windows.Forms.Label();
+            this.leftPanel = new System.Windows.Forms.Panel();
             idLabel = new System.Windows.Forms.Label();
             issuanceLabel = new System.Windows.Forms.Label();
             expiryLabel = new System.Windows.Forms.Label();
@@ -537,38 +537,20 @@
             this.rightPanel.Size = new System.Drawing.Size(257, 529);
             this.rightPanel.TabIndex = 27;
             // 
-            // leftPanel
+            // linkLabel3
             // 
-            this.leftPanel.BackColor = System.Drawing.Color.Gray;
-            this.leftPanel.Location = new System.Drawing.Point(0, 0);
-            this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(61, 45);
-            this.leftPanel.TabIndex = 28;
-            // 
-            // leftPanelLabel
-            // 
-            this.leftPanelLabel.AutoSize = true;
-            this.leftPanelLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leftPanelLabel.ForeColor = System.Drawing.Color.White;
-            this.leftPanelLabel.Location = new System.Drawing.Point(23, 31);
-            this.leftPanelLabel.Name = "leftPanelLabel";
-            this.leftPanelLabel.Size = new System.Drawing.Size(102, 32);
-            this.leftPanelLabel.TabIndex = 25;
-            this.leftPanelLabel.Text = "See too:";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(28, 89);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(85, 21);
-            this.linkLabel1.TabIndex = 26;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Bills To Pay";
+            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel3.LinkColor = System.Drawing.Color.White;
+            this.linkLabel3.Location = new System.Drawing.Point(28, 163);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(69, 21);
+            this.linkLabel3.TabIndex = 28;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Provider";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -583,20 +565,41 @@
             this.linkLabel2.TabIndex = 27;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Customer";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // linkLabel3
+            // linkLabel1
             // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Black;
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel3.LinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Location = new System.Drawing.Point(28, 163);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(69, 21);
-            this.linkLabel3.TabIndex = 28;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Provider";
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(28, 89);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(85, 21);
+            this.linkLabel1.TabIndex = 26;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Bills To Pay";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // leftPanelLabel
+            // 
+            this.leftPanelLabel.AutoSize = true;
+            this.leftPanelLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leftPanelLabel.ForeColor = System.Drawing.Color.White;
+            this.leftPanelLabel.Location = new System.Drawing.Point(23, 31);
+            this.leftPanelLabel.Name = "leftPanelLabel";
+            this.leftPanelLabel.Size = new System.Drawing.Size(102, 32);
+            this.leftPanelLabel.TabIndex = 25;
+            this.leftPanelLabel.Text = "See too:";
+            // 
+            // leftPanel
+            // 
+            this.leftPanel.BackColor = System.Drawing.Color.Gray;
+            this.leftPanel.Location = new System.Drawing.Point(0, 0);
+            this.leftPanel.Name = "leftPanel";
+            this.leftPanel.Size = new System.Drawing.Size(61, 45);
+            this.leftPanel.TabIndex = 28;
             // 
             // BillsToReceiveRegister
             // 

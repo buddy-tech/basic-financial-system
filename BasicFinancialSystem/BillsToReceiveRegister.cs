@@ -31,5 +31,29 @@ namespace BasicFinancialSystem
             this.billToReceiveTableAdapter.Fill(this.financialDataSet.BillToReceive);
 
         }
+
+        // This method will close the current formulary and open 'Bills to Pay' formulary.
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BillToPayRegister billToPayRegister = new BillToPayRegister();
+            billToPayRegister.Show();
+            Close();
+        }
+
+        // This method will close the current formulary and open 'Customer' formulary.
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CustomerRegister customerRegister = new CustomerRegister();
+            customerRegister.Show();
+            Close();
+        }
+
+        // This method will close the current formulary and open 'Provider' formulary.
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProviderRegister providerRegister = new ProviderRegister();
+            providerRegister.Show();
+            Close();
+        }
     }
 }
