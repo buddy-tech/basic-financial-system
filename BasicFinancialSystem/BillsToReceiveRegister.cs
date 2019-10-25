@@ -17,6 +17,11 @@ namespace BasicFinancialSystem
             InitializeComponent();
         }
 
+        public void Enable()
+        {
+
+        }
+
         private void billToReceiveBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
