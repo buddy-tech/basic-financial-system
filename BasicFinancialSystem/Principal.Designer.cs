@@ -97,6 +97,7 @@
             this.registrationBillsToReceiveItem.Name = "registrationBillsToReceiveItem";
             this.registrationBillsToReceiveItem.Size = new System.Drawing.Size(180, 22);
             this.registrationBillsToReceiveItem.Text = "Bills To Receive";
+            this.registrationBillsToReceiveItem.Click += new System.EventHandler(this.registrationBillsToReceiveItem_Click);
             // 
             // registrationBillsToPayItem
             // 

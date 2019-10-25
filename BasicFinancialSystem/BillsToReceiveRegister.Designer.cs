@@ -73,8 +73,12 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.newButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.rightPanel = new System.Windows.Forms.Panel();
+            this.leftPanel = new System.Windows.Forms.Panel();
+            this.leftPanelLabel = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             idLabel = new System.Windows.Forms.Label();
             issuanceLabel = new System.Windows.Forms.Label();
             expiryLabel = new System.Windows.Forms.Label();
@@ -87,7 +91,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingNavigator)).BeginInit();
             this.billToReceiveBindingNavigator.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.rightPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // idLabel
@@ -361,7 +365,7 @@
             this.customerTextBox.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerTextBox.Location = new System.Drawing.Point(69, 283);
             this.customerTextBox.Name = "customerTextBox";
-            this.customerTextBox.Size = new System.Drawing.Size(200, 22);
+            this.customerTextBox.Size = new System.Drawing.Size(381, 22);
             this.customerTextBox.TabIndex = 10;
             // 
             // paymentDateTimePicker
@@ -392,110 +396,207 @@
             // 
             // previousButton
             // 
+            this.previousButton.BackColor = System.Drawing.Color.Silver;
+            this.previousButton.FlatAppearance.BorderSize = 0;
+            this.previousButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.previousButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previousButton.Location = new System.Drawing.Point(67, 415);
             this.previousButton.Name = "previousButton";
-            this.previousButton.Size = new System.Drawing.Size(75, 23);
+            this.previousButton.Size = new System.Drawing.Size(75, 36);
             this.previousButton.TabIndex = 17;
             this.previousButton.Text = "Previous";
-            this.previousButton.UseVisualStyleBackColor = true;
+            this.previousButton.UseVisualStyleBackColor = false;
             // 
             // nextButton
             // 
+            this.nextButton.BackColor = System.Drawing.Color.Silver;
+            this.nextButton.FlatAppearance.BorderSize = 0;
+            this.nextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nextButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextButton.Location = new System.Drawing.Point(148, 415);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.Size = new System.Drawing.Size(75, 36);
             this.nextButton.TabIndex = 18;
             this.nextButton.Text = "Next";
-            this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.UseVisualStyleBackColor = false;
             // 
             // editButton
             // 
+            this.editButton.BackColor = System.Drawing.Color.Silver;
+            this.editButton.FlatAppearance.BorderSize = 0;
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editButton.Location = new System.Drawing.Point(359, 415);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.Size = new System.Drawing.Size(75, 36);
             this.editButton.TabIndex = 19;
             this.editButton.Text = "Edit";
-            this.editButton.UseVisualStyleBackColor = true;
+            this.editButton.UseVisualStyleBackColor = false;
             // 
             // searchButton
             // 
+            this.searchButton.BackColor = System.Drawing.Color.Silver;
+            this.searchButton.FlatAppearance.BorderSize = 0;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.Location = new System.Drawing.Point(359, 461);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.Size = new System.Drawing.Size(75, 36);
             this.searchButton.TabIndex = 20;
             this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.UseVisualStyleBackColor = false;
             // 
             // saveButton
             // 
+            this.saveButton.BackColor = System.Drawing.Color.Silver;
+            this.saveButton.FlatAppearance.BorderSize = 0;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.Location = new System.Drawing.Point(552, 415);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.Size = new System.Drawing.Size(75, 36);
             this.saveButton.TabIndex = 21;
             this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.UseVisualStyleBackColor = false;
             // 
             // deleteButton
             // 
+            this.deleteButton.BackColor = System.Drawing.Color.Silver;
+            this.deleteButton.FlatAppearance.BorderSize = 0;
+            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteButton.Location = new System.Drawing.Point(274, 461);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.Size = new System.Drawing.Size(75, 36);
             this.deleteButton.TabIndex = 22;
             this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.UseVisualStyleBackColor = false;
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(602, 22);
+            this.printButton.BackColor = System.Drawing.Color.Silver;
+            this.printButton.FlatAppearance.BorderSize = 0;
+            this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printButton.Location = new System.Drawing.Point(598, 9);
             this.printButton.Name = "printButton";
-            this.printButton.Size = new System.Drawing.Size(75, 23);
+            this.printButton.Size = new System.Drawing.Size(75, 36);
             this.printButton.TabIndex = 23;
             this.printButton.Text = "Print";
-            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.UseVisualStyleBackColor = false;
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(107, 461);
+            this.exitButton.BackColor = System.Drawing.Color.Silver;
+            this.exitButton.FlatAppearance.BorderSize = 0;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(99, 461);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(75, 36);
             this.exitButton.TabIndex = 24;
             this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.UseVisualStyleBackColor = false;
             // 
             // newButton
             // 
+            this.newButton.BackColor = System.Drawing.Color.Silver;
+            this.newButton.FlatAppearance.BorderSize = 0;
+            this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newButton.Location = new System.Drawing.Point(274, 415);
             this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(75, 23);
+            this.newButton.Size = new System.Drawing.Size(75, 36);
             this.newButton.TabIndex = 25;
             this.newButton.Text = "New";
-            this.newButton.UseVisualStyleBackColor = true;
+            this.newButton.UseVisualStyleBackColor = false;
             // 
             // cancelButton
             // 
+            this.cancelButton.BackColor = System.Drawing.Color.Silver;
+            this.cancelButton.FlatAppearance.BorderSize = 0;
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelButton.Location = new System.Drawing.Point(471, 415);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(75, 36);
             this.cancelButton.TabIndex = 26;
             this.cancelButton.Text = "Cancel";
-            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // rightPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.exitButton);
-            this.panel1.Location = new System.Drawing.Point(707, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(257, 529);
-            this.panel1.TabIndex = 27;
+            this.rightPanel.BackColor = System.Drawing.Color.Gray;
+            this.rightPanel.Controls.Add(this.linkLabel3);
+            this.rightPanel.Controls.Add(this.linkLabel2);
+            this.rightPanel.Controls.Add(this.linkLabel1);
+            this.rightPanel.Controls.Add(this.leftPanelLabel);
+            this.rightPanel.Controls.Add(this.exitButton);
+            this.rightPanel.Location = new System.Drawing.Point(707, 0);
+            this.rightPanel.Name = "rightPanel";
+            this.rightPanel.Size = new System.Drawing.Size(257, 529);
+            this.rightPanel.TabIndex = 27;
             // 
-            // panel2
+            // leftPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(61, 45);
-            this.panel2.TabIndex = 28;
+            this.leftPanel.BackColor = System.Drawing.Color.Gray;
+            this.leftPanel.Location = new System.Drawing.Point(0, 0);
+            this.leftPanel.Name = "leftPanel";
+            this.leftPanel.Size = new System.Drawing.Size(61, 45);
+            this.leftPanel.TabIndex = 28;
+            // 
+            // leftPanelLabel
+            // 
+            this.leftPanelLabel.AutoSize = true;
+            this.leftPanelLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leftPanelLabel.ForeColor = System.Drawing.Color.White;
+            this.leftPanelLabel.Location = new System.Drawing.Point(23, 31);
+            this.leftPanelLabel.Name = "leftPanelLabel";
+            this.leftPanelLabel.Size = new System.Drawing.Size(102, 32);
+            this.leftPanelLabel.TabIndex = 25;
+            this.leftPanelLabel.Text = "See too:";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(28, 89);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(85, 21);
+            this.linkLabel1.TabIndex = 26;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Bills To Pay";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel2.LinkColor = System.Drawing.Color.White;
+            this.linkLabel2.Location = new System.Drawing.Point(28, 125);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(78, 21);
+            this.linkLabel2.TabIndex = 27;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Customer";
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel3.LinkColor = System.Drawing.Color.White;
+            this.linkLabel3.Location = new System.Drawing.Point(28, 163);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(69, 21);
+            this.linkLabel3.TabIndex = 28;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Provider";
             // 
             // BillsToReceiveRegister
             // 
@@ -503,8 +604,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 528);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.leftPanel);
+            this.Controls.Add(this.rightPanel);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.newButton);
             this.Controls.Add(this.printButton);
@@ -541,7 +642,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.billToReceiveBindingNavigator)).EndInit();
             this.billToReceiveBindingNavigator.ResumeLayout(false);
             this.billToReceiveBindingNavigator.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.rightPanel.ResumeLayout(false);
+            this.rightPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,7 +686,11 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button newButton;
         private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel rightPanel;
+        private System.Windows.Forms.Panel leftPanel;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label leftPanelLabel;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }

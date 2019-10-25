@@ -30,5 +30,12 @@ namespace BasicFinancialSystem
         {
             Close();
         }
+
+        private void registrationBillsToReceiveItem_Click(object sender, EventArgs e)
+        {
+            BillsToReceiveRegister billToReceiveRegister = new BillsToReceiveRegister();
+            billToReceiveRegister.Show();
+            Close();
+        }
     }
 }
