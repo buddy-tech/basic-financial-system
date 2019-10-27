@@ -16,5 +16,12 @@ namespace Basic_Financial_System
         {
             InitializeComponent();
         }
+
+        private void UserRegister_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'financialDataSet.User'. Você pode movê-la ou removê-la conforme necessário.
+            this.userTableAdapter.Fill(this.financialDataSet.User);
+
+        }
     }
 }

@@ -11,3 +11,5 @@ C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Finan
 C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.exe
 C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.pdb
 C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Main.resources
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.RegisterIndex.resources
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.UserRegister.resources
