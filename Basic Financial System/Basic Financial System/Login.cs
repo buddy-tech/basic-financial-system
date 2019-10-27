@@ -28,10 +28,11 @@ namespace Basic_Financial_System
             {
                 Main main = new Main(); // Instantiating a new object from the class (or form to be specific) Main.
                 main.Show(); // Showing the value of this object, who is a form.
+                Close();
             }
             else
             {
-                MessageBox.Show("error");
+                MessageBox.Show("Username or Password incorrect, please insert again!");
             }
         }
     }
