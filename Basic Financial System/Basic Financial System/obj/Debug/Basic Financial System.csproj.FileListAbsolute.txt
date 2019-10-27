@@ -1,0 +1,12 @@
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csprojAssemblyReference.cache
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Login.resources
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Properties.Resources.resources
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csproj.GenerateResource.cache
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csproj.CoreCompileInputs.cache
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Financial.mdf
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Financial_log.ldf
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Basic Financial System.exe.config
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Basic Financial System.exe
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Basic Financial System.pdb
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.exe
+C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.pdb
