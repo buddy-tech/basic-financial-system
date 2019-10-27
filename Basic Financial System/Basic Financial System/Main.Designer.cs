@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.leftPanel = new System.Windows.Forms.Panel();
             this.exitButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.processesIndexButton = new System.Windows.Forms.Button();
+            this.billsIndexButton = new System.Windows.Forms.Button();
+            this.registerIndexButton = new System.Windows.Forms.Button();
+            this.leftPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // leftPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.exitButton);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(52, 478);
-            this.panel1.TabIndex = 0;
+            this.leftPanel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.leftPanel.Controls.Add(this.registerIndexButton);
+            this.leftPanel.Controls.Add(this.billsIndexButton);
+            this.leftPanel.Controls.Add(this.processesIndexButton);
+            this.leftPanel.Controls.Add(this.exitButton);
+            this.leftPanel.Location = new System.Drawing.Point(0, -1);
+            this.leftPanel.Name = "leftPanel";
+            this.leftPanel.Size = new System.Drawing.Size(52, 478);
+            this.leftPanel.TabIndex = 0;
             // 
             // exitButton
             // 
@@ -63,66 +63,66 @@
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // button1
+            // processesIndexButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 32);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
+            this.processesIndexButton.BackColor = System.Drawing.Color.Transparent;
+            this.processesIndexButton.FlatAppearance.BorderSize = 0;
+            this.processesIndexButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.processesIndexButton.ForeColor = System.Drawing.Color.Transparent;
+            this.processesIndexButton.Image = ((System.Drawing.Image)(resources.GetObject("processesIndexButton.Image")));
+            this.processesIndexButton.Location = new System.Drawing.Point(0, 117);
+            this.processesIndexButton.Name = "processesIndexButton";
+            this.processesIndexButton.Size = new System.Drawing.Size(51, 32);
+            this.processesIndexButton.TabIndex = 2;
+            this.processesIndexButton.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // billsIndexButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(0, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(51, 32);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = false;
+            this.billsIndexButton.BackColor = System.Drawing.Color.Transparent;
+            this.billsIndexButton.FlatAppearance.BorderSize = 0;
+            this.billsIndexButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.billsIndexButton.ForeColor = System.Drawing.Color.Transparent;
+            this.billsIndexButton.Image = ((System.Drawing.Image)(resources.GetObject("billsIndexButton.Image")));
+            this.billsIndexButton.Location = new System.Drawing.Point(0, 64);
+            this.billsIndexButton.Name = "billsIndexButton";
+            this.billsIndexButton.Size = new System.Drawing.Size(51, 32);
+            this.billsIndexButton.TabIndex = 3;
+            this.billsIndexButton.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // registerIndexButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(0, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(51, 32);
-            this.button3.TabIndex = 4;
-            this.button3.UseVisualStyleBackColor = false;
+            this.registerIndexButton.BackColor = System.Drawing.Color.Transparent;
+            this.registerIndexButton.FlatAppearance.BorderSize = 0;
+            this.registerIndexButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerIndexButton.ForeColor = System.Drawing.Color.Transparent;
+            this.registerIndexButton.Image = ((System.Drawing.Image)(resources.GetObject("registerIndexButton.Image")));
+            this.registerIndexButton.Location = new System.Drawing.Point(0, 14);
+            this.registerIndexButton.Name = "registerIndexButton";
+            this.registerIndexButton.Size = new System.Drawing.Size(51, 32);
+            this.registerIndexButton.TabIndex = 4;
+            this.registerIndexButton.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 477);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.leftPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
-            this.panel1.ResumeLayout(false);
+            this.leftPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel leftPanel;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button billsIndexButton;
+        private System.Windows.Forms.Button processesIndexButton;
+        private System.Windows.Forms.Button registerIndexButton;
     }
 }
