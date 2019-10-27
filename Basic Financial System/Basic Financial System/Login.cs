@@ -24,7 +24,15 @@ namespace Basic_Financial_System
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-
+            if (usernameTextBox.Text == "admin" && passwordTextBox.Text == "1234")
+            {
+                Main main = new Main(); // Instantiating a new object from the class (or form to be specific) Main.
+                main.Show(); // Showing the value of this object, who is a form.
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
         }
     }
 }
