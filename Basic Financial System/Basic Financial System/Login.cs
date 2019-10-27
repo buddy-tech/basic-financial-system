@@ -21,5 +21,10 @@ namespace Basic_Financial_System
         {
             Close();
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
