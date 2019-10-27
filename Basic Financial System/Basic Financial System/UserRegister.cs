@@ -23,5 +23,7 @@ namespace Basic_Financial_System
             this.userTableAdapter.Fill(this.financialDataSet.User);
 
         }
+
+
     }
 }

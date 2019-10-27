@@ -23,5 +23,12 @@ namespace Basic_Financial_System
             login.Show();
             Close();
         }
+
+        private void registerIndexButton_Click(object sender, EventArgs e)
+        {
+            RegisterIndex registerIndex = new RegisterIndex();
+            registerIndex.Show();
+            Close();
+        }
     }
 }

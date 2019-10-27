@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRegister));
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label levelLabel;
             System.Windows.Forms.Label loginLabel;
             System.Windows.Forms.Label passwordLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserRegister));
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -78,6 +78,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.financialDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.Location = new System.Drawing.Point(124, 70);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(172, 19);
+            idLabel.TabIndex = 1;
+            idLabel.Text = "Code of Identification:";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nameLabel.Location = new System.Drawing.Point(124, 130);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(56, 19);
+            nameLabel.TabIndex = 3;
+            nameLabel.Text = "Name:";
+            // 
+            // levelLabel
+            // 
+            levelLabel.AutoSize = true;
+            levelLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            levelLabel.Location = new System.Drawing.Point(380, 70);
+            levelLabel.Name = "levelLabel";
+            levelLabel.Size = new System.Drawing.Size(153, 19);
+            levelLabel.TabIndex = 5;
+            levelLabel.Text = "Level of Permission:";
+            // 
+            // loginLabel
+            // 
+            loginLabel.AutoSize = true;
+            loginLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            loginLabel.Location = new System.Drawing.Point(126, 184);
+            loginLabel.Name = "loginLabel";
+            loginLabel.Size = new System.Drawing.Size(53, 19);
+            loginLabel.TabIndex = 7;
+            loginLabel.Text = "Login:";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            passwordLabel.Location = new System.Drawing.Point(126, 250);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(84, 19);
+            passwordLabel.TabIndex = 9;
+            passwordLabel.Text = "Password:";
             // 
             // bindingNavigator1
             // 
@@ -214,16 +264,6 @@
             this.tableAdapterManager.UpdateOrder = Basic_Financial_System.FinancialDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UserTableAdapter = this.userTableAdapter;
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.Location = new System.Drawing.Point(124, 70);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(172, 19);
-            idLabel.TabIndex = 1;
-            idLabel.Text = "Code of Identification:";
-            // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "id", true));
@@ -232,16 +272,6 @@
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(35, 20);
             this.idTextBox.TabIndex = 2;
-            // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nameLabel.Location = new System.Drawing.Point(124, 130);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(56, 19);
-            nameLabel.TabIndex = 3;
-            nameLabel.Text = "Name:";
             // 
             // nameTextBox
             // 
@@ -252,16 +282,6 @@
             this.nameTextBox.Size = new System.Drawing.Size(215, 20);
             this.nameTextBox.TabIndex = 4;
             // 
-            // levelLabel
-            // 
-            levelLabel.AutoSize = true;
-            levelLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            levelLabel.Location = new System.Drawing.Point(380, 70);
-            levelLabel.Name = "levelLabel";
-            levelLabel.Size = new System.Drawing.Size(153, 19);
-            levelLabel.TabIndex = 5;
-            levelLabel.Text = "Level of Permission:";
-            // 
             // levelTextBox
             // 
             this.levelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "level", true));
@@ -271,16 +291,6 @@
             this.levelTextBox.Size = new System.Drawing.Size(34, 20);
             this.levelTextBox.TabIndex = 6;
             // 
-            // loginLabel
-            // 
-            loginLabel.AutoSize = true;
-            loginLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            loginLabel.Location = new System.Drawing.Point(126, 184);
-            loginLabel.Name = "loginLabel";
-            loginLabel.Size = new System.Drawing.Size(53, 19);
-            loginLabel.TabIndex = 7;
-            loginLabel.Text = "Login:";
-            // 
             // loginTextBox
             // 
             this.loginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "login", true));
@@ -289,16 +299,6 @@
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(215, 20);
             this.loginTextBox.TabIndex = 8;
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            passwordLabel.Location = new System.Drawing.Point(126, 250);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(84, 19);
-            passwordLabel.TabIndex = 9;
-            passwordLabel.Text = "Password:";
             // 
             // passwordTextBox
             // 

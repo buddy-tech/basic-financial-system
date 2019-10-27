@@ -37,10 +37,10 @@
             this.title = new System.Windows.Forms.Label();
             this.subtitle = new System.Windows.Forms.Label();
             this.userPanel = new System.Windows.Forms.Panel();
-            this.providerPanel = new System.Windows.Forms.Panel();
-            this.customerPanel = new System.Windows.Forms.Panel();
             this.userRegisterButton = new System.Windows.Forms.Button();
+            this.providerPanel = new System.Windows.Forms.Panel();
             this.providerRegisterButton = new System.Windows.Forms.Button();
+            this.customerPanel = new System.Windows.Forms.Panel();
             this.customerRegisterButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.userPanel.SuspendLayout();
@@ -143,26 +143,6 @@
             this.userPanel.Size = new System.Drawing.Size(316, 70);
             this.userPanel.TabIndex = 4;
             // 
-            // providerPanel
-            // 
-            this.providerPanel.BackColor = System.Drawing.Color.MidnightBlue;
-            this.providerPanel.Controls.Add(this.providerRegisterButton);
-            this.providerPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.providerPanel.Location = new System.Drawing.Point(109, 251);
-            this.providerPanel.Name = "providerPanel";
-            this.providerPanel.Size = new System.Drawing.Size(316, 70);
-            this.providerPanel.TabIndex = 5;
-            // 
-            // customerPanel
-            // 
-            this.customerPanel.BackColor = System.Drawing.Color.MidnightBlue;
-            this.customerPanel.Controls.Add(this.customerRegisterButton);
-            this.customerPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.customerPanel.Location = new System.Drawing.Point(433, 174);
-            this.customerPanel.Name = "customerPanel";
-            this.customerPanel.Size = new System.Drawing.Size(289, 70);
-            this.customerPanel.TabIndex = 6;
-            // 
             // userRegisterButton
             // 
             this.userRegisterButton.FlatAppearance.BorderSize = 0;
@@ -175,6 +155,17 @@
             this.userRegisterButton.Text = "User";
             this.userRegisterButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.userRegisterButton.UseVisualStyleBackColor = true;
+            this.userRegisterButton.Click += new System.EventHandler(this.userRegisterButton_Click);
+            // 
+            // providerPanel
+            // 
+            this.providerPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.providerPanel.Controls.Add(this.providerRegisterButton);
+            this.providerPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.providerPanel.Location = new System.Drawing.Point(109, 251);
+            this.providerPanel.Name = "providerPanel";
+            this.providerPanel.Size = new System.Drawing.Size(316, 70);
+            this.providerPanel.TabIndex = 5;
             // 
             // providerRegisterButton
             // 
@@ -188,6 +179,16 @@
             this.providerRegisterButton.Text = "Provider";
             this.providerRegisterButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.providerRegisterButton.UseVisualStyleBackColor = true;
+            // 
+            // customerPanel
+            // 
+            this.customerPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.customerPanel.Controls.Add(this.customerRegisterButton);
+            this.customerPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.customerPanel.Location = new System.Drawing.Point(433, 174);
+            this.customerPanel.Name = "customerPanel";
+            this.customerPanel.Size = new System.Drawing.Size(289, 70);
+            this.customerPanel.TabIndex = 6;
             // 
             // customerRegisterButton
             // 

@@ -16,5 +16,12 @@ namespace Basic_Financial_System
         {
             InitializeComponent();
         }
+
+        private void userRegisterButton_Click(object sender, EventArgs e)
+        {
+            UserRegister userRegister = new UserRegister();
+            userRegister.Show();
+            Close();
+        }
     }
 }
