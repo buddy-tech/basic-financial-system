@@ -70,7 +70,8 @@ namespace Basic_Financial_System
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            Close();
+            userBindingSource.CancelEdit();
+            Disable();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -113,6 +114,20 @@ namespace Basic_Financial_System
             else
             {
                 MessageBox.Show("No registers to edit!");
+            }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (userBindingSource.Count > 0)
+            {
+                userBindingSource.RemoveCurrent();
+                userTableAdapter.Update(financialDataSet.User);
+                MessageBox.Show("Register deleted successfuly!");
+            }
+            else
+            {
+                MessageBox.Show("No register to delete!");
             }
         }
     }
