@@ -79,5 +79,12 @@ namespace Basic_Financial_System
             registerIndex.Show();
             Close();
         }
+
+        private void newButton_Click(object sender, EventArgs e)
+        {
+            userBindingSource.AddNew();
+            Enable();
+            nameTextBox.Focus();
+        }
     }
 }
