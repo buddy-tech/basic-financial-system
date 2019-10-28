@@ -57,7 +57,7 @@
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(52, 478);
+            this.panel1.Size = new System.Drawing.Size(52, 728);
             this.panel1.TabIndex = 1;
             // 
             // button3
@@ -162,7 +162,7 @@
             this.providerPanel.BackColor = System.Drawing.Color.MidnightBlue;
             this.providerPanel.Controls.Add(this.providerRegisterButton);
             this.providerPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.providerPanel.Location = new System.Drawing.Point(109, 251);
+            this.providerPanel.Location = new System.Drawing.Point(730, 174);
             this.providerPanel.Name = "providerPanel";
             this.providerPanel.Size = new System.Drawing.Size(316, 70);
             this.providerPanel.TabIndex = 5;
@@ -172,7 +172,7 @@
             this.providerRegisterButton.FlatAppearance.BorderSize = 0;
             this.providerRegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.providerRegisterButton.Font = new System.Drawing.Font("Karla", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.providerRegisterButton.Location = new System.Drawing.Point(-1, -2);
+            this.providerRegisterButton.Location = new System.Drawing.Point(0, 3);
             this.providerRegisterButton.Name = "providerRegisterButton";
             this.providerRegisterButton.Size = new System.Drawing.Size(305, 70);
             this.providerRegisterButton.TabIndex = 1;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 473);
+            this.ClientSize = new System.Drawing.Size(1200, 720);
             this.Controls.Add(this.customerPanel);
             this.Controls.Add(this.providerPanel);
             this.Controls.Add(this.userPanel);
