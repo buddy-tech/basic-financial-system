@@ -46,15 +46,16 @@ namespace Basic_Financial_System
             printButton.Enabled = false;
         }
 
+        // This method defines the disabled inputs and button on active consulting process.
         private void Disable()
         {
-            // Editing the disabled inputs in register process.
+            // Editing the disabled inputs in consulting process.
             idTextBox.Enabled = false;
             nameTextBox.Enabled = false;
             levelTextBox.Enabled = false;
             loginTextBox.Enabled = false;
             passwordTextBox.Enabled = false;
-            // Editing the disabled buttons in register process.
+            // Editing the disabled buttons in consulting process.
             previousButton.Enabled = true;
             nextButton.Enabled = true;
             newButton.Enabled = true;
