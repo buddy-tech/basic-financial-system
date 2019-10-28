@@ -86,5 +86,12 @@ namespace Basic_Financial_System
             Enable();
             nameTextBox.Focus();
         }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            userBindingSource.EndEdit();
+            userTableAdapter.Update(financialDataSet.User);
+            Disable();
+        }
     }
 }
