@@ -93,5 +93,10 @@ namespace Basic_Financial_System
             userTableAdapter.Update(financialDataSet.User);
             Disable();
         }
+
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            userBindingSource.MovePrevious();
+        }
     }
 }

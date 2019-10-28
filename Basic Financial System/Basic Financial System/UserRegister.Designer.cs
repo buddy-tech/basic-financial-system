@@ -327,6 +327,7 @@
             this.previousButton.TabIndex = 12;
             this.previousButton.Text = "Previous";
             this.previousButton.UseVisualStyleBackColor = true;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // nextButton
             // 
