@@ -215,6 +215,16 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>748, 17</value>
   </metadata>
+  <data name="exitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAADuSURBVFhHzc47EsMwDANR3//Q
+        VobjGPotPFIKOsVrUCx5lFJehWMmHDPhmAlHOc8d5YtbBo4yH3Hu4xdqGTgKHxv1x5MfmI/HTi0DR5kP
+        tvh4oJaBo/QHW/54oJaBo7TR6vl4oJaBo4zhleOBWgaO0ofXjgdqGThKja4fD9QycJQruHc8UMvAUX45
+        Hqhl4Ch/8EDYf4JaBo5So3tPUMvAUfrw+hPUMnCUOb72BLUMHIXiK09Qy8BRxnD1/AS1DByljc78E9Qy
+        cJT+IOEnqGXgKPNBMj9BLQNH4YPk9QfC/QC3DBwz4ZgJx0w45inHB0QNYaUWcADeAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="printPreviewDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>

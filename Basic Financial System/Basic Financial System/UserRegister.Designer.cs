@@ -69,6 +69,7 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label1 = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             levelLabel = new System.Windows.Forms.Label();
@@ -85,7 +86,7 @@
             // 
             idLabel.AutoSize = true;
             idLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.Location = new System.Drawing.Point(124, 70);
+            idLabel.Location = new System.Drawing.Point(117, 150);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(172, 19);
             idLabel.TabIndex = 1;
@@ -95,7 +96,7 @@
             // 
             nameLabel.AutoSize = true;
             nameLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nameLabel.Location = new System.Drawing.Point(124, 130);
+            nameLabel.Location = new System.Drawing.Point(117, 210);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(56, 19);
             nameLabel.TabIndex = 3;
@@ -105,7 +106,7 @@
             // 
             levelLabel.AutoSize = true;
             levelLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            levelLabel.Location = new System.Drawing.Point(380, 70);
+            levelLabel.Location = new System.Drawing.Point(373, 150);
             levelLabel.Name = "levelLabel";
             levelLabel.Size = new System.Drawing.Size(153, 19);
             levelLabel.TabIndex = 5;
@@ -115,7 +116,7 @@
             // 
             loginLabel.AutoSize = true;
             loginLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            loginLabel.Location = new System.Drawing.Point(126, 184);
+            loginLabel.Location = new System.Drawing.Point(119, 264);
             loginLabel.Name = "loginLabel";
             loginLabel.Size = new System.Drawing.Size(53, 19);
             loginLabel.TabIndex = 7;
@@ -125,7 +126,7 @@
             // 
             passwordLabel.AutoSize = true;
             passwordLabel.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            passwordLabel.Location = new System.Drawing.Point(126, 250);
+            passwordLabel.Location = new System.Drawing.Point(119, 330);
             passwordLabel.Name = "passwordLabel";
             passwordLabel.Size = new System.Drawing.Size(84, 19);
             passwordLabel.TabIndex = 9;
@@ -270,7 +271,7 @@
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "id", true));
             this.idTextBox.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idTextBox.Location = new System.Drawing.Point(128, 92);
+            this.idTextBox.Location = new System.Drawing.Point(121, 172);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(35, 20);
             this.idTextBox.TabIndex = 2;
@@ -279,7 +280,7 @@
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "name", true));
             this.nameTextBox.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameTextBox.Location = new System.Drawing.Point(128, 152);
+            this.nameTextBox.Location = new System.Drawing.Point(121, 232);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(215, 20);
             this.nameTextBox.TabIndex = 4;
@@ -288,7 +289,7 @@
             // 
             this.levelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "level", true));
             this.levelTextBox.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.levelTextBox.Location = new System.Drawing.Point(384, 92);
+            this.levelTextBox.Location = new System.Drawing.Point(377, 172);
             this.levelTextBox.Name = "levelTextBox";
             this.levelTextBox.Size = new System.Drawing.Size(34, 20);
             this.levelTextBox.TabIndex = 6;
@@ -297,7 +298,7 @@
             // 
             this.loginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "login", true));
             this.loginTextBox.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginTextBox.Location = new System.Drawing.Point(128, 215);
+            this.loginTextBox.Location = new System.Drawing.Point(121, 295);
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(215, 20);
             this.loginTextBox.TabIndex = 8;
@@ -306,24 +307,27 @@
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "password", true));
             this.passwordTextBox.Font = new System.Drawing.Font("Karla", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextBox.Location = new System.Drawing.Point(128, 275);
+            this.passwordTextBox.Location = new System.Drawing.Point(121, 355);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(215, 20);
             this.passwordTextBox.TabIndex = 10;
             // 
             // exitButton
             // 
+            this.exitButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.exitButton.FlatAppearance.BorderSize = 0;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
             this.exitButton.Location = new System.Drawing.Point(0, 0);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(52, 41);
             this.exitButton.TabIndex = 11;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // previousButton
             // 
-            this.previousButton.Location = new System.Drawing.Point(128, 338);
+            this.previousButton.Location = new System.Drawing.Point(121, 418);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(75, 23);
             this.previousButton.TabIndex = 12;
@@ -333,7 +337,7 @@
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(209, 338);
+            this.nextButton.Location = new System.Drawing.Point(202, 418);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
             this.nextButton.TabIndex = 13;
@@ -343,7 +347,7 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(128, 367);
+            this.editButton.Location = new System.Drawing.Point(121, 447);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 14;
@@ -353,7 +357,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(209, 367);
+            this.searchButton.Location = new System.Drawing.Point(202, 447);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(75, 23);
             this.searchButton.TabIndex = 15;
@@ -362,7 +366,7 @@
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(648, 70);
+            this.printButton.Location = new System.Drawing.Point(641, 150);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
             this.printButton.TabIndex = 16;
@@ -372,7 +376,7 @@
             // 
             // newButton
             // 
-            this.newButton.Location = new System.Drawing.Point(290, 367);
+            this.newButton.Location = new System.Drawing.Point(283, 447);
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(75, 23);
             this.newButton.TabIndex = 17;
@@ -382,7 +386,7 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(371, 338);
+            this.saveButton.Location = new System.Drawing.Point(364, 418);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 18;
@@ -392,7 +396,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(371, 367);
+            this.cancelButton.Location = new System.Drawing.Point(364, 447);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 19;
@@ -402,7 +406,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(290, 338);
+            this.deleteButton.Location = new System.Drawing.Point(283, 418);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 20;
@@ -424,11 +428,23 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Karla", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(115, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 43);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "User Register";
+            // 
             // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveButton);
@@ -502,5 +518,6 @@
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label1;
     }
 }

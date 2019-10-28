@@ -42,6 +42,11 @@
             this.providerRegisterButton = new System.Windows.Forms.Button();
             this.customerPanel = new System.Windows.Forms.Panel();
             this.customerRegisterButton = new System.Windows.Forms.Button();
+            this.title2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.userPanel.SuspendLayout();
             this.providerPanel.SuspendLayout();
@@ -67,7 +72,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Transparent;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(-1, 13);
+            this.button3.Location = new System.Drawing.Point(-1, 56);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(51, 32);
             this.button3.TabIndex = 4;
@@ -80,7 +85,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(-1, 64);
+            this.button2.Location = new System.Drawing.Point(-1, 110);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 32);
             this.button2.TabIndex = 3;
@@ -93,7 +98,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 117);
+            this.button1.Location = new System.Drawing.Point(0, 165);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(51, 32);
             this.button1.TabIndex = 2;
@@ -106,7 +111,7 @@
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.ForeColor = System.Drawing.Color.Transparent;
             this.exitButton.Image = ((System.Drawing.Image)(resources.GetObject("exitButton.Image")));
-            this.exitButton.Location = new System.Drawing.Point(-1, 169);
+            this.exitButton.Location = new System.Drawing.Point(-1, 7);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(52, 32);
             this.exitButton.TabIndex = 1;
@@ -163,23 +168,25 @@
             this.providerPanel.BackColor = System.Drawing.Color.MidnightBlue;
             this.providerPanel.Controls.Add(this.providerRegisterButton);
             this.providerPanel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.providerPanel.Location = new System.Drawing.Point(730, 174);
+            this.providerPanel.Location = new System.Drawing.Point(728, 174);
             this.providerPanel.Name = "providerPanel";
             this.providerPanel.Size = new System.Drawing.Size(316, 70);
             this.providerPanel.TabIndex = 5;
             // 
             // providerRegisterButton
             // 
+            this.providerRegisterButton.BackColor = System.Drawing.Color.Transparent;
             this.providerRegisterButton.FlatAppearance.BorderSize = 0;
             this.providerRegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.providerRegisterButton.Font = new System.Drawing.Font("Karla", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.providerRegisterButton.Location = new System.Drawing.Point(0, 3);
+            this.providerRegisterButton.ForeColor = System.Drawing.Color.Transparent;
+            this.providerRegisterButton.Location = new System.Drawing.Point(3, 3);
             this.providerRegisterButton.Name = "providerRegisterButton";
-            this.providerRegisterButton.Size = new System.Drawing.Size(305, 70);
+            this.providerRegisterButton.Size = new System.Drawing.Size(313, 64);
             this.providerRegisterButton.TabIndex = 1;
             this.providerRegisterButton.Text = "Provider";
             this.providerRegisterButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.providerRegisterButton.UseVisualStyleBackColor = true;
+            this.providerRegisterButton.UseVisualStyleBackColor = false;
             // 
             // customerPanel
             // 
@@ -204,11 +211,65 @@
             this.customerRegisterButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.customerRegisterButton.UseVisualStyleBackColor = true;
             // 
+            // title2
+            // 
+            this.title2.AutoSize = true;
+            this.title2.Font = new System.Drawing.Font("Karla", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title2.Location = new System.Drawing.Point(99, 294);
+            this.title2.Name = "title2";
+            this.title2.Size = new System.Drawing.Size(378, 41);
+            this.title2.TabIndex = 7;
+            this.title2.Text = "Registrationt Reports";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Karla", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(102, 346);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(562, 38);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Lorem impuso laase ias weaert ploist, Lorem impuso laase ias weaert ploist\r\nLorem" +
+    " impuso laase ias weaert ploistLorem impuso laase ias weaert ploist";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Location = new System.Drawing.Point(110, 409);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(316, 70);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.Location = new System.Drawing.Point(433, 409);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(289, 70);
+            this.panel3.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.panel4.Location = new System.Drawing.Point(731, 409);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(313, 70);
+            this.panel4.TabIndex = 8;
+            // 
             // RegisterIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.title2);
             this.Controls.Add(this.customerPanel);
             this.Controls.Add(this.providerPanel);
             this.Controls.Add(this.userPanel);
@@ -243,5 +304,10 @@
         private System.Windows.Forms.Button providerRegisterButton;
         private System.Windows.Forms.Panel customerPanel;
         private System.Windows.Forms.Button customerRegisterButton;
+        private System.Windows.Forms.Label title2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
