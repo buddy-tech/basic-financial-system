@@ -103,5 +103,17 @@ namespace Basic_Financial_System
         {
             userBindingSource.MoveNext();
         }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            if (userBindingSource.Count > 0)
+            {
+                Enable();
+            }
+            else
+            {
+                MessageBox.Show("No registers to edit!");
+            }
+        }
     }
 }
