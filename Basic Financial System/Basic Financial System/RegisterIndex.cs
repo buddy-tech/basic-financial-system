@@ -23,5 +23,13 @@ namespace Basic_Financial_System
             userRegister.Show();
             Close();
         }
+
+        // Returns to Main page.
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            Close();
+        }
     }
 }

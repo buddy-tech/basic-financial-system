@@ -130,5 +130,24 @@ namespace Basic_Financial_System
                 MessageBox.Show("No register to delete!");
             }
         }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            string str = "";
+            Graphics printObject = e.Graphics;
+
+            str += "USER REGISTRATION";
+            str += "Code: " + idTextBox.Text + "\n";
+            str += "Name: " + nameTextBox.Text + "\n";
+
+            Font font = new System.Drawing.Font("Arial", 12, FontStyle.Bold);
+            printObject.DrawString(str, font, Brushes.Black, 50, 50);
+        }
     }
 }
+ 
