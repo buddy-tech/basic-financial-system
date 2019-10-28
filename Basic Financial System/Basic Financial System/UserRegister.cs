@@ -98,5 +98,10 @@ namespace Basic_Financial_System
         {
             userBindingSource.MovePrevious();
         }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            userBindingSource.MoveNext();
+        }
     }
 }
