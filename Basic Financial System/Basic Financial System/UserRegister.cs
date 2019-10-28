@@ -24,6 +24,7 @@ namespace Basic_Financial_System
 
         }
 
+        // This method defines the enabled inputs and button on active register process.
         private void Enable()
         {
             // Editing the enabled inputs in register process.
@@ -43,7 +44,27 @@ namespace Basic_Financial_System
             searchButton.Enabled = false;
             exitButton.Enabled = false;
             printButton.Enabled = false;
+        }
 
+        private void Disable()
+        {
+            // Editing the disabled inputs in register process.
+            idTextBox.Enabled = false;
+            nameTextBox.Enabled = false;
+            levelTextBox.Enabled = false;
+            loginTextBox.Enabled = false;
+            passwordTextBox.Enabled = false;
+            // Editing the disabled buttons in register process.
+            previousButton.Enabled = true;
+            nextButton.Enabled = true;
+            newButton.Enabled = true;
+            editButton.Enabled = true;
+            deleteButton.Enabled = true;
+            saveButton.Enabled = false;
+            cancelButton.Enabled = false;
+            searchButton.Enabled = true;
+            exitButton.Enabled = true;
+            printButton.Enabled = true;
         }
 
 
