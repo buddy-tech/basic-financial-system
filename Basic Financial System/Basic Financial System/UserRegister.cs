@@ -68,6 +68,9 @@ namespace Basic_Financial_System
             printButton.Enabled = true;
         }
 
-
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
