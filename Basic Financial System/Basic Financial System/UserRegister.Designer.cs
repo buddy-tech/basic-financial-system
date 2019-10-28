@@ -57,16 +57,16 @@
             this.levelTextBox = new System.Windows.Forms.TextBox();
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.previousButton = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.printButton = new System.Windows.Forms.Button();
+            this.newButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             levelLabel = new System.Windows.Forms.Label();
@@ -309,111 +309,111 @@
             this.passwordTextBox.Size = new System.Drawing.Size(215, 20);
             this.passwordTextBox.TabIndex = 10;
             // 
-            // button1
+            // exitButton
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.exitButton.Location = new System.Drawing.Point(0, 0);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 11;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // previousButton
             // 
-            this.button2.Location = new System.Drawing.Point(128, 338);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Previous";
-            this.button2.UseVisualStyleBackColor = true;
+            this.previousButton.Location = new System.Drawing.Point(128, 338);
+            this.previousButton.Name = "previousButton";
+            this.previousButton.Size = new System.Drawing.Size(75, 23);
+            this.previousButton.TabIndex = 12;
+            this.previousButton.Text = "Previous";
+            this.previousButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // nextButton
             // 
-            this.button3.Location = new System.Drawing.Point(209, 338);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Next";
-            this.button3.UseVisualStyleBackColor = true;
+            this.nextButton.Location = new System.Drawing.Point(209, 338);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.TabIndex = 13;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // editButton
             // 
-            this.button4.Location = new System.Drawing.Point(128, 367);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Edit";
-            this.button4.UseVisualStyleBackColor = true;
+            this.editButton.Location = new System.Drawing.Point(128, 367);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 14;
+            this.editButton.Text = "Edit";
+            this.editButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // searchButton
             // 
-            this.button5.Location = new System.Drawing.Point(209, 367);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Search";
-            this.button5.UseVisualStyleBackColor = true;
+            this.searchButton.Location = new System.Drawing.Point(209, 367);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 15;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // printButton
             // 
-            this.button6.Location = new System.Drawing.Point(648, 70);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Print";
-            this.button6.UseVisualStyleBackColor = true;
+            this.printButton.Location = new System.Drawing.Point(648, 70);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(75, 23);
+            this.printButton.TabIndex = 16;
+            this.printButton.Text = "Print";
+            this.printButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // newButton
             // 
-            this.button7.Location = new System.Drawing.Point(290, 367);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "New";
-            this.button7.UseVisualStyleBackColor = true;
+            this.newButton.Location = new System.Drawing.Point(290, 367);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(75, 23);
+            this.newButton.TabIndex = 17;
+            this.newButton.Text = "New";
+            this.newButton.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // saveButton
             // 
-            this.button8.Location = new System.Drawing.Point(371, 338);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 18;
-            this.button8.Text = "Save";
-            this.button8.UseVisualStyleBackColor = true;
+            this.saveButton.Location = new System.Drawing.Point(371, 338);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 18;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // cancelButton
             // 
-            this.button9.Location = new System.Drawing.Point(371, 367);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 19;
-            this.button9.Text = "Cancel";
-            this.button9.UseVisualStyleBackColor = true;
+            this.cancelButton.Location = new System.Drawing.Point(371, 367);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 19;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // deleteButton
             // 
-            this.button10.Location = new System.Drawing.Point(290, 338);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 20;
-            this.button10.Text = "Delete";
-            this.button10.UseVisualStyleBackColor = true;
+            this.deleteButton.Location = new System.Drawing.Point(290, 338);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 20;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
             // 
             // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 720);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.newButton);
+            this.Controls.Add(this.printButton);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.editButton);
+            this.Controls.Add(this.nextButton);
+            this.Controls.Add(this.previousButton);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(nameLabel);
@@ -465,15 +465,15 @@
         private System.Windows.Forms.TextBox levelTextBox;
         private System.Windows.Forms.TextBox loginTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button previousButton;
+        private System.Windows.Forms.Button nextButton;
+        private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Button printButton;
+        private System.Windows.Forms.Button newButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button deleteButton;
     }
 }

@@ -24,6 +24,28 @@ namespace Basic_Financial_System
 
         }
 
+        private void Enable()
+        {
+            // Editing the enabled inputs in register process.
+            idTextBox.Enabled = false;
+            nameTextBox.Enabled = true;
+            levelTextBox.Enabled = true;
+            loginTextBox.Enabled = true;
+            passwordTextBox.Enabled = true;
+            // Editing the enabled buttons in register process.
+            previousButton.Enabled = false;
+            nextButton.Enabled = false;
+            newButton.Enabled = false;
+            editButton.Enabled = false;
+            deleteButton.Enabled = false;
+            saveButton.Enabled = true;
+            cancelButton.Enabled = true;
+            searchButton.Enabled = false;
+            exitButton.Enabled = false;
+            printButton.Enabled = false;
+
+        }
+
 
     }
 }
