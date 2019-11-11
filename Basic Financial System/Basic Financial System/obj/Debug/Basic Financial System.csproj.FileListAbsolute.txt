@@ -13,3 +13,19 @@ C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Finan
 C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Main.resources
 C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.RegisterIndex.resources
 C:\Users\davif\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.UserRegister.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Financial.mdf
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Financial_log.ldf
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Basic Financial System.exe.config
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Basic Financial System.exe
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\bin\Debug\Basic Financial System.pdb
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csprojAssemblyReference.cache
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Login.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Main.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.Properties.Resources.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.ProviderRegister.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.RegisterIndex.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.UserRegister.resources
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csproj.GenerateResource.cache
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csproj.CoreCompileInputs.cache
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.exe
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.pdb
