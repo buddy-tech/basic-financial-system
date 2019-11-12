@@ -31,8 +31,6 @@ namespace Basic_Financial_System
             {
                 Main main = new Main(); // Instantiating a new object from the class (or form to be specific) Main.
                 main.Show(); // Showing the value of this object, who is a form.
-                
-                
             }
             else
             {
