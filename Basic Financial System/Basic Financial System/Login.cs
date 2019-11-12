@@ -26,8 +26,8 @@ namespace Basic_Financial_System
         {
             userBindingSource.Filter = "name = '" + usernameTextBox + "' AND password = '" + passwordTextBox + "'";
             userTableAdapter.Fill(financialDataSet.User);
-            
-            if (usernameTextBox.Text == "admin" && passwordTextBox.Text == "1234")
+            // userTableAdapter.FillLogin(financialDataSet.User, usernameTextBox, passwordTextBox);
+            if (usernameTextBox.Text == "admin" && passwordTextBox.Text == "1234" || userBindingSource.Count > 0)
             {
                 Main main = new Main(); // Instantiating a new object from the class (or form to be specific) Main.
                 main.Show(); // Showing the value of this object, who is a form.
