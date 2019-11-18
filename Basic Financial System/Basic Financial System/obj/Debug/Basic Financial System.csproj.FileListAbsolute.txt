@@ -29,3 +29,4 @@ C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Fina
 C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.csproj.CoreCompileInputs.cache
 C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.exe
 C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic Financial System.pdb
+C:\Users\aluno2\Desktop\basic-financial-system\Basic Financial System\Basic Financial System\obj\Debug\Basic_Financial_System.SplashScreen.resources

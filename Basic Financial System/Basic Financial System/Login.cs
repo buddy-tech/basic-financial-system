@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +16,9 @@ namespace Basic_Financial_System
         public Login()
         {
             InitializeComponent();
+            SplashScreen splashScreen = new SplashScreen(); 
+            splashScreen.Show();
+            Thread.Sleep(3000);
         }
 
         private void exitButton_Click(object sender, EventArgs e)
